@@ -1,20 +1,18 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
+        <div className="px-16 pt-16 pb-32 min-h-screen flex">
+        <h1 className="text-5xl mt-auto pr-64" style={{ fontVariationSettings: "'wdth' 105" }}>
+        We do flips, we swing swords, we do splits, and more.
+        <br />
+        This is <span style={{ fontVariationSettings: "'wdth' 150" }}>UCSD Wushu.</span>
+        </h1>
+        </div>
   </Layout>
 )
 
