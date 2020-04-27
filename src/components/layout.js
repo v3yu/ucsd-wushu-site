@@ -7,6 +7,7 @@
 
 import React from "react"
 import PropTypes from "prop-types"
+import WushuBg from "../assets/wushu_bg_c.mp4"
 // import { useStaticQuery, graphql } from "gatsby"
 
 import Nav from "./nav"
@@ -24,14 +25,19 @@ const Layout = ({ children }) => {
   // `)
 
   return (
-    <div className="min-h-screen md:flex">
-      <div className="md:h-screen flex-none w-full md:max-w-xs bg-purple text-white">
-        <Nav />
+    <>
+      <video autoPlay muted loop class="fixed left-0 bottom-0 min-w-full min-h-full z-0" style={{ objectFit: "cover" }}>
+        <source src={WushuBg} type="video/mp4" />
+      </video>
+      <div className="min-h-screen md:flex">
+        <div className="md:h-screen flex-none w-full md:max-w-xs text-white z-10">
+          <Nav />
+        </div>
+        <div className="flex-1 z-10 text-gray-100">
+          <main>{children}</main>
+        </div>
       </div>
-      <div className="flex-1">
-        <main>{children}</main>
-      </div>
-    </div>
+    </>
   )
 }
 
