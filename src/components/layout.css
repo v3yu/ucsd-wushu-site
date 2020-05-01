@@ -19,6 +19,10 @@ body {
     margin: 0;
 }
 
+.faq-bg {
+    background-image: url('../images/bg-text.svg');
+}
+
 h1 {
     vertical-align: super;
 }
