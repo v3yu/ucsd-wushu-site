@@ -26,11 +26,11 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <video autoPlay muted loop class="fixed left-0 bottom-0 min-w-full min-h-full z-0" style={{ objectFit: "cover" }}>
+      <video autoPlay muted loop className="fixed left-0 bottom-0 min-w-full min-h-full z-0" style={{ objectFit: "cover" }}>
         <source src={WushuBg} type="video/mp4" />
       </video>
       <div className="min-h-screen md:flex">
-        <div className="md:h-screen flex-none w-full md:max-w-xs text-white z-10">
+        <div className="md:h-screen md:fixed md:left-0 md:top-0 flex-none w-full md:max-w-xs text-white z-50">
           <Nav />
         </div>
         <div className="flex-1 z-10 text-gray-100">
