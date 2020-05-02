@@ -2,28 +2,87 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { useStaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
+import { Link } from "gatsby"
+import WushuBg from "../assets/wushu_bg_c.mp4"
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <div className="px-16 pt-16 min-h-screen flex pb-20" style={{ paddingLeft: "20rem" }}>
-      <h1 className="text-4xl mt-auto pr-64" style={{ fontVariationSettings: "'wdth' 105" }}>
-        We swing swords and do backflips for fun. We are performers and competitors. And sometimes, we sell egg rolls.
+const IndexPage = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      yy: file(relativePath: { eq: "images/yy.jpg" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid_tracedSVG
+          }
+        }
+      }
+      wat: file(relativePath: { eq: "images/wat.jpg" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid_tracedSVG
+          }
+        }
+      }
+      soc: file(relativePath: { eq: "images/soc.jpg" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid_tracedSVG
+          }
+        }
+      }
+    }
+  `)
+
+  return (
+    <Layout>
+      <SEO title="Home" />
+      <div className="px-8 lg:px-16 pt-16 min-h-screen flex pb-20 lg:pl-xs">
+        <video autoPlay muted loop className="absolute left-0 bottom-0 min-w-full min-h-full z-0" style={{ objectFit: "cover" }}>
+          <source src={WushuBg} type="video/mp4" />
+        </video>
+        <h1 className="text-3xl lg:text-4xl mt-auto lg:pr-64 z-10" style={{ fontVariationSettings: "'wdth' 105" }}>
+          We swing swords and do backflips for fun. We are performers and competitors. And sometimes, we sell egg rolls.
         <br />
         This is<span style={{ fontVariationSettings: "'wdth' 125, 'wght' 700" }}> UCSD Wushu.</span>
-      </h1>
-    </div>
-    <div className="border-solid border-t min-h-screen flex bg-black z-0" style={{ paddingLeft: "20rem" }}>
-      <div className="px-16 pt-16 pb-20 faq-bg border-solid border-l min-w-full">
-        <div className="border-solid border-2 bg-black w-2/3">
-          <h1 className="text-5xl m-8 mb-0 mr-32" style={{ fontVariationSettings: "'wdth' 125, 'wght' 700" }}>
-            <span className="align-text-top text-2xl">01</span> What is wushu?
-          </h1>
-          <p className="m-8 mt-0 mr-32">UCSD practices contemporary Chinese wushu, an exhibition martial art developed after 1949 in the People’s Republic of China based on traditional Chinese martial arts. Wushu performances and competition are based on routines, called forms (taolu), in various events representing different styles and types of weapons used in traditional Chinese martial arts. In addition, there is also sparring (sanda), although the club does not practice sparring.</p>
+        </h1>
+      </div>
+      <div className="border-solid border-t min-h-screen flex bg-black z-0 lg:pl-xs">
+        <div className="border-solid lg:border-l min-w-full">
+          <div className="border-solid border-b bg-black w-full flex flex-col lg:flex-row">
+            <div className="py-16 px-8 lg:px-16 lg:w-1/2 border-solid lg:border-r">
+              <h1 className="mb-4 text-5xl leading-tight" style={{ fontVariationSettings: "'wdth' 125, 'wght' 700" }}>
+                <span className="align-text-top text-2xl">01</span> What is wushu?
+              </h1>
+              <p className="text-lg">UCSD practices contemporary Chinese wushu, an exhibition martial art developed after 1949 in the People’s Republic of China based on traditional Chinese martial arts. Wushu performances and competition are based on routines, called forms (taolu), in various events representing different styles and types of weapons used in traditional Chinese martial arts. In addition, there is also sparring (sanda), although the club does not practice sparring.</p>
+            </div>
+            <Img className="lg:w-1/2" alt="Our pres doin cool shit :)" sizes={{ ...data.yy.childImageSharp.fluid, aspectRatio: 4/3 }} />
+          </div>
+          <div className="border-solid border-b bg-black w-full flex flex-col lg:flex-row">
+            <Img className="lg:w-1/2 border-solid border-r" alt="We vibin tho" sizes={{ ...data.wat.childImageSharp.fluid, aspectRatio: 4/3 }} />
+            <div className="py-16 px-8 lg:px-16 lg:w-1/2 bg-teal-400 text-black">
+              <h1 className="mb-4 text-5xl leading-tight" style={{ fontVariationSettings: "'wdth' 125, 'wght' 700" }}>
+                <span className="align-text-top text-2xl">02</span> I'm a beginner, can I join?
+              </h1>
+              <p className="text-lg mb-8">We welcome people of all ages and experience levels to come share our passion by enrolling in wushu classes on rec.ucsd.edu as well as to form lifelong friendships by hanging out at club events.</p>
+              <Link to="/class" className="transition duration-100 hover:bg-black hover:text-white py-3 px-4 text-lg inline-block w-2/3 border-solid border-black flex" style={{ borderWidth: "1px", fontVariationSettings: "'wght' 500" }}><span className="flex-grow">Enroll in a wushu class</span>🡪</Link>
+            </div>
+          </div>
+          <div className="border-solid border-b bg-black w-full flex flex-col lg:flex-row">
+            <div className="py-16 px-8 lg:px-16 lg:w-1/2 border-solid lg:border-r">
+              <h1 className="mb-4 text-5xl leading-tight" style={{ fontVariationSettings: "'wdth' 125, 'wght' 700" }}>
+                <span className="align-text-top text-2xl">03</span> What's the difference between wushu "class" and "club"?
+              </h1>
+              <p className="text-lg">To be part of the class, enroll in at least one of the three wushu classes offered through UCSD Recreation.</p>
+              <br />
+              <p className="text-lg">To be part of the club, show up to at least two club events throughout the quarter, including but not limited to socials, fundraisers, performances, and competitions.</p>
+            </div>
+            <Img className="lg:w-1/2" alt="Socializing" sizes={{ ...data.soc.childImageSharp.fluid, aspectRatio: 4/3 }} />
+          </div>
         </div>
       </div>
-    </div>
-  </Layout>
-)
+    </Layout>
+  )
+}
 
 export default IndexPage

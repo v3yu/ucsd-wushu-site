@@ -1,6 +1,11 @@
 module.exports = {
   theme: {
-    extend: {},
+    extend: {
+      padding: {
+        'xs': '20rem',
+        '22': '5.5rem',
+      }
+    },
   },
   variants: {},
   plugins: [],

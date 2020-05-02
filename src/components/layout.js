@@ -7,35 +7,20 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import WushuBg from "../assets/wushu_bg_c.mp4"
 // import { useStaticQuery, graphql } from "gatsby"
 
 import Nav from "./nav"
 import "./layout.css"
 
 const Layout = ({ children }) => {
-  // const data = useStaticQuery(graphql`
-  //   query SiteTitleQuery {
-  //     site {
-  //       siteMetadata {
-  //         title
-  //       }
-  //     }
-  //   }
-  // `)
 
   return (
     <>
-      <video autoPlay muted loop className="fixed left-0 bottom-0 min-w-full min-h-full z-0" style={{ objectFit: "cover" }}>
-        <source src={WushuBg} type="video/mp4" />
-      </video>
-      <div className="min-h-screen md:flex">
-        <div className="md:h-screen md:fixed md:left-0 md:top-0 flex-none w-full md:max-w-xs text-white z-50">
+      <div className="min-h-screen lg:flex">
+        <div>
           <Nav />
         </div>
-        <div className="flex-1 z-10 text-gray-100">
-          <main>{children}</main>
-        </div>
+        <main className="z-10 text-gray-100">{children}</main>
       </div>
     </>
   )
