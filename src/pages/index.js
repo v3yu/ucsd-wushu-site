@@ -59,7 +59,7 @@ const IndexPage = () => {
             <Img className="lg:w-1/2" alt="Our pres doin cool shit :)" sizes={{ ...data.yy.childImageSharp.fluid, aspectRatio: 4/3 }} />
           </div>
           <div className="border-solid border-b bg-black w-full flex flex-col lg:flex-row">
-            <Img className="lg:w-1/2 border-solid border-r" alt="We vibin tho" sizes={{ ...data.wat.childImageSharp.fluid, aspectRatio: 4/3 }} />
+            <Img className="lg:w-1/2 border-solid lg:border-r" alt="We vibin tho" sizes={{ ...data.wat.childImageSharp.fluid, aspectRatio: 4/3 }} />
             <div className="py-16 px-8 lg:px-16 lg:w-1/2 bg-teal-400 text-black">
               <h1 className="mb-4 text-5xl leading-tight" style={{ fontVariationSettings: "'wdth' 125, 'wght' 700" }}>
                 <span className="align-text-top text-2xl">02</span> I'm a beginner, can I join?
