@@ -52,7 +52,7 @@ const IndexPage = () => {
           <div className="border-solid border-b bg-black w-full flex flex-col lg:flex-row">
             <div className="py-16 px-8 lg:px-16 lg:w-1/2 border-solid lg:border-r">
               <h1 className="mb-4 text-5xl leading-tight" style={{ fontVariationSettings: "'wdth' 125, 'wght' 700" }}>
-                <span className="align-text-top text-2xl">01</span> What is wushu?
+                <span className="align-text-top text-xl">01</span> What is wushu?
               </h1>
               <p className="text-lg">UCSD practices contemporary Chinese wushu, an exhibition martial art developed after 1949 in the People’s Republic of China based on traditional Chinese martial arts. Wushu performances and competition are based on routines, called forms (taolu), in various events representing different styles and types of weapons used in traditional Chinese martial arts. In addition, there is also sparring (sanda), although the club does not practice sparring.</p>
             </div>
@@ -62,7 +62,7 @@ const IndexPage = () => {
             <Img className="lg:w-1/2 border-solid lg:border-r" alt="We vibin tho" sizes={{ ...data.wat.childImageSharp.fluid, aspectRatio: 4/3 }} />
             <div className="py-16 px-8 lg:px-16 lg:w-1/2 bg-teal-400 text-black">
               <h1 className="mb-4 text-5xl leading-tight" style={{ fontVariationSettings: "'wdth' 125, 'wght' 700" }}>
-                <span className="align-text-top text-2xl">02</span> I'm a beginner, can I join?
+                <span className="align-text-top text-xl">02</span> I'm a beginner, can I join?
               </h1>
               <p className="text-lg mb-8">We welcome people of all ages and experience levels to come share our passion by enrolling in wushu classes on rec.ucsd.edu as well as to form lifelong friendships by hanging out at club events.</p>
               <Link to="/class" className="transition duration-100 hover:bg-black hover:text-white py-3 px-4 text-lg inline-block w-2/3 border-solid border-black flex" style={{ borderWidth: "1px", fontVariationSettings: "'wght' 500" }}><span className="flex-grow">Enroll in a wushu class</span>🡪</Link>
@@ -71,7 +71,7 @@ const IndexPage = () => {
           <div className="border-solid border-b bg-black w-full flex flex-col lg:flex-row">
             <div className="py-16 px-8 lg:px-16 lg:w-1/2 border-solid lg:border-r">
               <h1 className="mb-4 text-5xl leading-tight" style={{ fontVariationSettings: "'wdth' 125, 'wght' 700" }}>
-                <span className="align-text-top text-2xl">03</span> What's the difference between wushu "class" and "club"?
+                <span className="align-text-top text-xl">03</span> What's the difference between wushu "class" and "club"?
               </h1>
               <p className="text-lg">To be part of the class, enroll in at least one of the three wushu classes offered through UCSD Recreation.</p>
               <br />
