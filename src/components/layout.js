@@ -20,7 +20,7 @@ const Layout = ({ children }) => {
         <div>
           <Nav />
         </div>
-        <main className="z-10 text-gray-100">{children}</main>
+        <main className="z-10 text-gray-100 w-full">{children}</main>
       </div>
     </>
   )

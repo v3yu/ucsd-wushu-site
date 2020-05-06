@@ -6,6 +6,7 @@
   "author": "David Cao <david@cao.sh>",
   "dependencies": {
     "gatsby": "^2.20.25",
+    "gatsby-background-image": "^1.1.1",
     "gatsby-cli": "^2.11.17",
     "gatsby-image": "^2.3.4",
     "gatsby-plugin-manifest": "^2.3.5",
