@@ -10,7 +10,7 @@ import WushuBg from "../assets/wushu_bg_c.mp4"
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
     query {
-      yy: file(relativePath: { eq: "images/yy.jpg" }) {
+      wushu: file(relativePath: { eq: "images/wushu.jpg" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid_tracedSVG
@@ -37,7 +37,8 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" />
-      <div className="px-8 lg:px-16 pt-16 min-h-screen flex pb-20 lg:pl-xs">
+      <a href="https://www.youtube.com/watch?v=cqVRAgQnIjY" id="hero" className="px-8 lg:px-16 block pt-16 min-h-screen flex pb-20 lg:pl-xs">
+        <span className="tooltip hidden absolute bg-black text-white border-solid px-3 pt-2 pb-1 overflow-hidden whitespace-no-wrap" style={{ borderWidth: "1px", zIndex: "1000" }}>Click to watch our 2019 showreel</span>
         <video autoPlay muted loop className="absolute left-0 bottom-0 min-w-full min-h-full z-0" style={{ objectFit: "cover" }}>
           <source src={WushuBg} type="video/mp4" />
         </video>
@@ -46,7 +47,7 @@ const IndexPage = () => {
         <br />
         This is<span style={{ fontVariationSettings: "'wdth' 125, 'wght' 700" }}> UCSD Wushu.</span>
         </h1>
-      </div>
+      </a>
       <div className="border-solid border-t min-h-screen flex bg-black z-0 lg:pl-xs">
         <div className="border-solid lg:border-l min-w-full">
           <div className="border-solid border-b bg-black w-full flex flex-col lg:flex-row">
@@ -56,7 +57,7 @@ const IndexPage = () => {
               </h1>
               <p className="text-lg">UCSD practices contemporary Chinese wushu, an exhibition martial art developed after 1949 in the People’s Republic of China based on traditional Chinese martial arts. Wushu performances and competition are based on routines, called forms (taolu), in various events representing different styles and types of weapons used in traditional Chinese martial arts. In addition, there is also sparring (sanda), although the club does not practice sparring.</p>
             </div>
-            <Img className="lg:w-1/2" alt="Our pres doin cool shit :)" sizes={{ ...data.yy.childImageSharp.fluid, aspectRatio: 4/3 }} />
+            <Img className="lg:w-1/2" alt="Our pres doin cool shit :)" sizes={{ ...data.wushu.childImageSharp.fluid, aspectRatio: 4/3 }} />
           </div>
           <div className="border-solid border-b bg-black w-full flex flex-col lg:flex-row">
             <Img className="lg:w-1/2 border-solid lg:border-r" alt="We vibin tho" sizes={{ ...data.wat.childImageSharp.fluid, aspectRatio: 4/3 }} />

@@ -30,7 +30,21 @@ body {
     transition: all 100ms !important;
 }
 
+a#hero:hover .tooltip {
+    display: block;
+}
+
 /*
+.tooltip {
+    display: none;
+    background: black;
+    padding: 10px;
+    position: absolute;
+    z-index: 1000;
+    width:200px;
+    height:100px;
+}
+
 .bg-tint a {
     font-variation-settings: 'wdth' 110, 'wght' 700;
     transition: all 100ms !important;

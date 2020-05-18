@@ -117,14 +117,14 @@ const IndexPage = () => {
           desc="As a 4th-year with the enthusiasm of a 1st-year, the burnout of a 4th-year, and the sleep schedule of someone who should've died long ago, this international business and sociocultural anthropology double major who doesn't know what she's doing with her life is trying her best to make UCSD Wushu as awesome as it deserves to be. In her free time, she enjoys standing on her toes, whacking herself in the head with weapons she's not good enough to use, and taking blurry pics that will probably become memes. One of her few skills is listening, however, so if you've got anything to say, she'll be there for you. Just don't ask her to solve any math/science/tech problems. Also, know that if you ride in the car she's driving, your life is in danger. You have been warned."
           img={data.yy.childImageSharp.fluid} />
         <Member
-          title="VP, External"
+          title="Vice President, External"
           name="Kaitlyn Trinh"
           desc="somehow a decade’s experience has not taught her the difference between a bow stance and a drop stance"
           img={data.kaitlyn.childImageSharp.fluid} />
         <Member
-          title="VP, Internal"
+          title="Vice President, Internal"
           name="May Ho"
-          desc="May Ho is a second year student in ERC college. Her major is Chemistry. She started wushu at UCSD Wushu because she wanted to learn a new style of martial arts."
+          desc="May Ho is a third year student in ERC college. Her major is Chemistry. She started wushu at UCSD Wushu because she wanted to learn a new style of martial arts."
           img={data.may.childImageSharp.fluid} />
         <Member
           title="Secretary"
@@ -149,17 +149,17 @@ const IndexPage = () => {
         <Member
           title="Social Chair"
           name="Sabrina Pham-Vu"
-          desc="Sabrina is a third year student, and started wushu two years ago when she came to UCSD. She was born in the year of the cat. Therefore, like most cats, she ignores responsibilities and didn't fill out this bio (don't worry, socials will not be affected by this irresponsiblity, just her grades)."
+          desc="Sabrina is a fourth year student, and started wushu two years ago when she came to UCSD. She was born in the year of the cat. Therefore, like most cats, she ignores responsibilities and didn't fill out this bio (don't worry, socials will not be affected by this irresponsiblity, just her grades)."
           img={data.sabrina.childImageSharp.fluid} />
         <Member
           title="Public Relations"
           name="Kelly Tran"
-          desc="Kelly Tran is a second year student at Sixth College majoring in Speculative Design and minoring in Design and Entrepreneurship. As an interdisciplinary, computing art student she has interest in all mediums of art especially photography."
+          desc="Kelly Tran is a third year student at Sixth College majoring in Speculative Design and minoring in Design and Entrepreneurship. As an interdisciplinary, computing art student she has interest in all mediums of art especially photography."
           img={data.kelly.childImageSharp.fluid} />
         <Member
           title="Inventory Manager"
           name="Terence Liu"
-          desc="Terence is a second year Human Biology major and also the inventory manager of the UCSD Wushu Club. He became interested in martial arts when he watched Jet Li in “Once Upon a Time in China,” and has been a fan since childhood. Despite being in wushu for about a year, Terence aims to improve himself. He has a sweet tooth and is a Nintendo fan. Also, swords. He likes swords ‘cuz they’re cool."
+          desc="Terence is a third year Human Biology major and also the inventory manager of the UCSD Wushu Club. He became interested in martial arts when he watched Jet Li in “Once Upon a Time in China,” and has been a fan since childhood. Despite being in wushu for about a year, Terence aims to improve himself. He has a sweet tooth and is a Nintendo fan. Also, swords. He likes swords ‘cuz they’re cool."
           img={data.terence.childImageSharp.fluid} />
       </BackgroundImage>
     </Layout>
