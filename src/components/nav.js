@@ -45,13 +45,10 @@ const Nav = () => {
               <Link to="/class" className="transition duration-100 inline-block border-b border-transparent hover:border-gray-100">Class</Link>
             </li>
             <li className="text-2xl mt-1 text-gray-100">
-              <Link to="/team" className="transition duration-100 inline-block border-b border-transparent hover:border-gray-100">Team</Link>
+              <Link to="/cabinet" className="transition duration-100 inline-block border-b border-transparent hover:border-gray-100">Cabinet</Link>
             </li>
             <li className="text-2xl mt-1 text-gray-100">
               <Link to="/demos" className="transition duration-100 inline-block border-b border-transparent hover:border-gray-100">Demos</Link>
-            </li>
-            <li className="text-2xl mt-1 text-gray-100">
-              <Link to="/events" className="transition duration-100 inline-block border-b border-transparent hover:border-gray-100">Events</Link>
             </li>
             <li className="text-2xl mt-1 text-gray-100">
               <Link to="/contact" className="transition duration-100 inline-block border-b border-transparent hover:border-gray-100">Contact</Link>

@@ -29,9 +29,9 @@ const IndexPage = () => {
     <Layout>
       <SEO title="Home" />
       <div className="min-h-screen flex lg:pl-xs">
-        <div className="border-solid lg:border-l flex items-stretch flex-col w-full">
+        <div className="border-solid lg:border-l flex items-stretch flex-col w-full max-w-full">
           <BackgroundImage
-            className="p-8 lg:px-16 lg:py-12 flex-grow flex w-full text-3xl lg:text-4xl lg:pr-64 z-10 border-solid border-b bg-tint"
+            className="p-8 lg:px-16 lg:py-12 flex-grow flex w-full text-xl lg:text-4xl lg:pr-64 z-10 border-solid border-b bg-tint"
             fluid={data.demo.childImageSharp.fluid}>
             <h1 className="mt-auto" style={{ fontVariationSettings: "'wdth' 105" }}>
               For demo-related inquiries:
@@ -43,10 +43,10 @@ const IndexPage = () => {
             </h1>
           </BackgroundImage>
           <BackgroundImage
-            className="p-8 lg:px-16 lg:py-12 flex-grow flex text-3xl lg:text-4xl lg:pr-64 z-10 bg-tint"
+            className="p-8 lg:px-16 lg:py-12 flex-grow flex text-xl lg:text-4xl lg:pr-64 z-10 bg-tint"
             fluid={data.gen.childImageSharp.fluid}>
             <h1 className="mt-auto" style={{ fontVariationSettings: "'wdth' 105" }}>
-              For general inquiries:
+              For everything else:
               <br />
               <a
                 className="border-b border-transparent hover:border-gray-100"
