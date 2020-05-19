@@ -79,7 +79,7 @@ const IndexPage = () => {
           }
         }
       }
-      soc: file(relativePath: { eq: "images/soc.jpg" }) {
+      felicity: file(relativePath: { eq: "images/cabinet/felicity.jpg" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid_tracedSVG
@@ -129,8 +129,8 @@ const IndexPage = () => {
         <Member
           title="Secretary"
           name="Felicity Le"
-          desc="yong-yi 2.0"
-          img={data.soc.childImageSharp.fluid} />
+          desc="Felicity Le is a second year Global Health major in Warren College. She joined wushu when she started college and has enjoyed it ever since. If she’s not at wushu, she can be found at dance practice! She has been dancing her whole life and could not imagine life without it. Along with this, Felicity can commonly be seen surrounded by green things and avocados - both loves of her life."
+          img={data.felicity.childImageSharp.fluid} />
         <Member
           title="Treasurer"
           name="Sidney Huen"
