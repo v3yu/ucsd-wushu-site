@@ -103,7 +103,7 @@ const IndexPage = () => {
         className="px-8 lg:px-16 pt-16 min-h-screen pb-20 lg:pl-xs"
         style={{ columns: "3 400px", columnGap: "0.75rem", paddingTop: "65vh", backgroundAttachment: "fixed", backgroundColor: "rgba(0,0,0,.75)", backgroundBlendMode: "multiply" }}
         fluid={data.all.childImageSharp.fluid}>
-        <div className="inline-block text-3xl lg:text-3xl mb-8" style={{ fontVariationSettings: "'wdth' 125, 'wght' 400" }}>
+        <div className="inline-block text-xl lg:text-3xl mb-8" style={{ fontVariationSettings: "'wdth' 125, 'wght' 400" }}>
           <h1>Everything that isn't rec classes falls under the responsibility of <strong>cabinet</strong>. If you have any questions or concerns, talk to us! We don't bite :)</h1>
         </div>
         <Member
