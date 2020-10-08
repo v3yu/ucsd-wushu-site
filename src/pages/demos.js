@@ -38,6 +38,12 @@ const IndexPage = () => {
       <SEO title="Demos" />
       <div className="min-h-screen flex lg:pl-xs">
         <div className="border-solid lg:border-l items-stretch w-full max-w-full">
+          <div className="px-8 lg:px-16 pt-40 lg:pt-16 pb-8 lg:pb-16 border-solid border-b">
+            <h1 className="text-3xl lg:text-4xl mt-auto lg:pr-64 z-10" style={{ fontVariationSettings: "'wdth' 125, 'wght' 700" }}>
+              Demos
+            </h1>
+            <h3 className="text-lg lg:text-xl text-gray-500" >Last updated <strong>September 12, 2020</strong></h3>
+          </div>
           <BackgroundImage
             className="p-8 lg:px-16 lg:py-12 flex-grow flex w-full text-xl lg:text-4xl z-10 border-solid border-b bg-tint"
             style={{ height: "50vh" }}

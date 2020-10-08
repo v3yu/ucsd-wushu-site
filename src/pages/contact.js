@@ -31,7 +31,7 @@ const IndexPage = () => {
       <div className="min-h-screen flex lg:pl-xs">
         <div className="border-solid lg:border-l flex items-stretch flex-col w-full max-w-full">
           <BackgroundImage
-            className="p-8 lg:px-16 lg:py-12 flex-grow flex w-full text-xl lg:text-4xl lg:pr-64 z-10 border-solid border-b bg-tint"
+            className="p-8 lg:px-16 lg:py-12 flex-grow flex text-xl lg:text-4xl lg:pr-64 z-10 border-solid border-b bg-tint"
             fluid={data.demo.childImageSharp.fluid}>
             <h1 className="mt-auto" style={{ fontVariationSettings: "'wdth' 105" }}>
               For demo-related inquiries:

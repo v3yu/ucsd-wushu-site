@@ -1,9 +1,6 @@
 @tailwind base;
-
 @tailwind components;
-
 @tailwind utilities;
-
 @font-face {
     font-family: "Aktiv Grotesk VF";
     src: url("../fonts/AktivGroteskVF_Trial_WghtWdthItal.woff2");
@@ -19,20 +16,24 @@ body {
     margin: 0;
 }
 
-.bg-tint::before {
-    background-color: rgba(0,0,0,.65) !important;
+.bg-tint {
+    background-color: rgba(0, 0, 0, .85) !important;
     background-blend-mode: multiply !important;
     transition: all 0.1s !important;
 }
 
+
+/*
 .bg-tint:hover::before {
-    background-color: rgba(0,0,0,0.85) !important;
+    background-color: rgba(0, 0, 0, 0.85) !important;
     transition: all 100ms !important;
 }
+*/
 
 a#hero:hover .tooltip {
     display: block;
 }
+
 
 /*
 .tooltip {

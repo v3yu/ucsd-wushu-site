@@ -34,8 +34,8 @@ class IndexPage extends Component {
           </video>
           <h1 className="text-3xl lg:text-4xl mt-auto lg:pr-64 z-10" style={{ fontVariationSettings: "'wdth' 105" }}>
             We swing swords and do backflips for fun. We are performers and competitors. And sometimes, we sell egg rolls.
-        <br />
-        This is<span style={{ fontVariationSettings: "'wdth' 125, 'wght' 700" }}> UCSD Wushu.</span>
+            <br />
+            This is<span style={{ fontVariationSettings: "'wdth' 125, 'wght' 700" }}> UCSD Wushu.</span>
           </h1>
         </a>
         <div className="border-solid border-t min-h-screen flex bg-black z-0 lg:pl-xs">
@@ -59,7 +59,8 @@ class IndexPage extends Component {
                 <Link to="/class" className="transition duration-100 hover:bg-black hover:text-white py-3 px-4 text-lg inline-block w-2/3 border-solid border-black flex" style={{ borderWidth: "1px", fontVariationSettings: "'wght' 500" }}><span className="flex-grow">Enroll in a wushu class</span>🡪</Link>
               </div>
             </div>
-            <div className="border-solid border-b bg-black w-full flex flex-col lg:flex-row">
+            {/*
+            <div className="bg-black w-full flex flex-col lg:flex-row">
               <div className="py-16 px-8 lg:px-16 lg:w-1/2 border-solid lg:border-r">
                 <h1 className="mb-4 text-5xl leading-tight" style={{ fontVariationSettings: "'wdth' 125, 'wght' 700" }}>
                   <span className="align-text-top text-xl">03</span> What's the difference between wushu "class" and "club"?
@@ -70,6 +71,7 @@ class IndexPage extends Component {
               </div>
               <Img className="lg:w-1/2" alt="Socializing" sizes={{ ...data.soc.childImageSharp.fluid, aspectRatio: 4 / 3 }} />
             </div>
+            */}
           </div>
         </div>
       </Layout>

@@ -56,17 +56,14 @@ const Nav = () => {
           </ul>
           <footer className="mt-8">
             <div>
-              <ul className="mb-4">
-                <li className="mt-1"><a className="transition duration-100 text-gray-500 hover:text-gray-100" href="https://www.instagram.com/ucsdwushu/">Instagram</a></li>
-                <li className="mt-1"><a className="transition duration-100 text-gray-500 hover:text-gray-100" href="https://www.facebook.com/UCSDwushu">Facebook</a></li>
-                <li className="mt-1"><a className="transition duration-100 text-gray-500 hover:text-gray-100" href="https://www.youtube.com/channel/UCJJOaO7Kk3-u-qHxsRbrFuw">YouTube</a></li>
+              <ul className="mb-4 text-gray-300">
+                <li className="mt-1"><a className="transition duration-100 opacity-75 hover:opacity-100" href="https://www.instagram.com/ucsdwushu/">Instagram</a></li>
+                <li className="mt-1"><a className="transition duration-100 opacity-75 hover:opacity-100" href="https://www.facebook.com/UCSDwushu">Facebook</a></li>
+                <li className="mt-1"><a className="transition duration-100 opacity-75 hover:opacity-100" href="https://www.youtube.com/channel/UCJJOaO7Kk3-u-qHxsRbrFuw">YouTube</a></li>
               </ul>
 
-              <p className="text-gray-700">
-                © {new Date().getFullYear()} UCSD Wushu
-            <br />
-            Designed by <a className="transition duration-100 hover:text-gray-500" href="https://cao.sh">David Cao</a>
-              </p>
+              <p className="opacity-50 text-gray-400">© {new Date().getFullYear()} UCSD Wushu</p>
+              <p><a className="opacity-50 text-gray-400 transition duration-100 hover:opacity-100" href="https://cao.sh">Designed by David Cao</a></p>
             </div>
           </footer>
 
