@@ -34,6 +34,11 @@ const IndexPage = () => {
               Due to the uncertainty surrounding the rapidly evolving pandemic situation, our approach to classes will change and adapt throughout the year.
               Please check this website and our social media channels for updates on classes and events.
             </p>
+            <p className="text-lg max-w-3xl mt-6 p-4 border border-solid border-red-400 text-red-200">
+              <strong>Hey!</strong> Our first competition training on October 10, 2020, 3-5p will be an <strong>open practice</strong>,
+              which means that no membership will be required to participate. If you're interested in trying wushu out and seeing
+              if it's for you, this is a zero-commitment way to do so, so come through! (Location info TBD.)
+            </p>
             <h2 className="text-2xl pt-8 pb-4" style={{ fontVariationSettings: "'wdth' 125, 'wght' 700" }}>Membership</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-2 max-w-5xl">
               <div className="border-solid py-6 pl-6 pr-8" style={{ borderWidth: "1px" }}>
@@ -80,11 +85,6 @@ const IndexPage = () => {
                 <p className="text-lg">Sun 3-4p, Zoom Link TBD</p>
               </div>
             </div>
-            <p className="text-lg max-w-3xl mt-6 p-4 border border-solid border-red-400 text-red-200">
-              <strong>Hey!</strong> Our first competition training on October 10, 2020, 3-5p will be an <strong>open practice</strong>,
-              which means that no membership will be required to participate. If you're interesting in trying wushu out and seeing
-              if it's for you, this is a zero-commitment way to do so, so come through! (Location info TBD.)
-            </p>
             <p className="text-lg max-w-3xl pt-6">
               As it currently stands, in order to support our training, UCSD Wushu will be hosting a combination of in-person and Zoom-based classes.
               All in-person classes will also be livestreamed through Zoom, but no guided instruction will be provided through Zoom for these in-person classes.
