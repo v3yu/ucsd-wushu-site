@@ -82,7 +82,7 @@ const IndexPage = () => {
                   This fully virtual class will help you build strength and stamina through conditioning exercises.
                   No forms or techniques are taught during this session.
                 </p>
-                <p className="text-lg">Sun 3-4p, Zoom Link TBD</p>
+                <p className="text-lg">Time and Location TBD</p>
               </div>
             </div>
             <p className="text-lg max-w-3xl pt-6">
