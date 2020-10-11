@@ -82,7 +82,7 @@ const IndexPage = () => {
                   This fully virtual class will help you build strength and stamina through conditioning exercises.
                   No forms or techniques are taught during this session.
                 </p>
-                <p className="text-lg">Time and Location TBD</p>
+                <p className="text-lg">Sun 3-4p, <a href="https://ucsd.zoom.us/j/99567034017" className="border-b border-gray-700 hover:border-gray-100">Zoom (ID: 995 6703 4017)</a></p>
               </div>
             </div>
             <p className="text-lg max-w-3xl pt-6">
