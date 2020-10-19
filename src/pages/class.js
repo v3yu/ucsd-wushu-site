@@ -69,7 +69,7 @@ const IndexPage = () => {
               <div className="border-solid py-6 pl-6 pr-8" style={{ borderWidth: "1px" }}>
                 <h1 className="text-xl pb-2" style={{ fontVariationSettings: "'wdth' 125, 'wght' 600" }}>Competition Training</h1>
                 <p className="pb-6 text-gray-400">This training focuses on a wide variety of techniques, with a slant towards preparation for competition (if the health situation allows). All levels welcome!</p>
-                <p className="text-lg">Sat 3-5p, Location TBD</p>
+                <p className="text-lg">Sat 3-5p, <a href="https://goo.gl/maps/TQqA4SXg2BKfzA3K9">Marshall Field</a></p>
               </div>
               <div className="border-solid py-6 pl-6 pr-8" style={{ borderWidth: "1px" }}>
                 <h1 className="text-xl pb-2" style={{ fontVariationSettings: "'wdth' 125, 'wght' 600" }}>Conditioning Training</h1>
