@@ -27,7 +27,7 @@ const IndexPage = () => {
             <h1 className="text-3xl lg:text-4xl mt-auto lg:pr-64 z-10" style={{ fontVariationSettings: "'wdth' 125, 'wght' 700" }}>
               Return to Wushu
             </h1>
-            <h3 className="text-lg lg:text-xl text-gray-500" >Last updated <strong>October 8, 2020</strong></h3>
+            <h3 className="text-lg lg:text-xl text-gray-500" >Last updated <strong>January 5, 2021</strong></h3>
           </BackgroundImage>
           <div className="px-8 lg:px-16 py-16">
             <p className="text-lg max-w-3xl">
@@ -64,12 +64,12 @@ const IndexPage = () => {
               <div className="border-solid py-6 pl-6 pr-8" style={{ borderWidth: "1px" }}>
                 <h1 className="text-xl pb-2" style={{ fontVariationSettings: "'wdth' 125, 'wght' 600" }}>Fundamentals Training</h1>
                 <p className="pb-6 text-gray-400">This class will focus on training fundamental techniques to build mastery of the basics. Beginner-friendly, but advanced students welcome!</p>
-                <p className="text-lg">Mon 9-9:45a, <a href="https://goo.gl/maps/MxYY4BcATyLVYx1B9" className="border-b border-gray-700 hover:border-gray-100">Muir Field</a> | <a href="https://rec.ucsd.edu/Program/GetProgramDetails?courseId=f89da2fe-4ab6-4112-806b-57352f1b1bbf&semesterId=1730ddb3-c10a-4f03-beda-f60683d01c19" className="border-b border-gray-700 hover:border-gray-100">Register on rec.ucsd.edu</a></p>
+                <p className="text-lg">Mon 10-10:45a, <a href="https://goo.gl/maps/MxYY4BcATyLVYx1B9" className="border-b border-gray-700 hover:border-gray-100">Muir Field</a> | <a href="https://rec.ucsd.edu/Program/GetProgramDetails?courseId=f89da2fe-4ab6-4112-806b-57352f1b1bbf&semesterId=7ccf6749-da82-48b0-bfa5-7551fdbcc57f" className="border-b border-gray-700 hover:border-gray-100">Register on rec.ucsd.edu</a></p>
               </div>
               <div className="border-solid py-6 pl-6 pr-8" style={{ borderWidth: "1px" }}>
                 <h1 className="text-xl pb-2" style={{ fontVariationSettings: "'wdth' 125, 'wght' 600" }}>Competition Training</h1>
                 <p className="pb-6 text-gray-400">This training focuses on a wide variety of techniques, with a slant towards preparation for competition (if the health situation allows). All levels welcome!</p>
-                <p className="text-lg">Sat 3-5p, <a href="https://goo.gl/maps/TQqA4SXg2BKfzA3K9">Marshall Field</a></p>
+                <p className="text-lg">Time and Location TBD</p>
               </div>
               <div className="border-solid py-6 pl-6 pr-8" style={{ borderWidth: "1px" }}>
                 <h1 className="text-xl pb-2" style={{ fontVariationSettings: "'wdth' 125, 'wght' 600" }}>Conditioning Training</h1>
@@ -77,7 +77,7 @@ const IndexPage = () => {
                   This fully virtual class will help you build strength and stamina through conditioning exercises.
                   No forms or techniques are taught during this session.
                 </p>
-                <p className="text-lg">Sun 4-5p, <a href="https://ucsd.zoom.us/j/99567034017" className="border-b border-gray-700 hover:border-gray-100">Zoom (ID: 995 6703 4017)</a></p>
+                <p className="text-lg">Time and Zoom Link TBD</p>
               </div>
             </div>
             <p className="text-lg max-w-3xl pt-6">
