@@ -129,7 +129,7 @@ const IndexPage = () => {
         <Member
           title="Demo Coordinator"
           name="David Cao"
-          desc="David is a third year student at Sixth majoring in Computer Science and minoring in Political Science and . He started wushu in elementary school and has been practicing ever since. "
+          desc="David is a third year student at Sixth majoring in Computer Science and minoring in Political Science and Ethnic Studies. He started wushu in elementary school and has been practicing ever since. When he's not at wushu, you can find him dancing, filming videos, or helping design websites for clubs and other people :^)"
           img={data.david.childImageSharp.fluid} />
         <Member
           title="Public Relations"
