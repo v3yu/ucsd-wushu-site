@@ -33,6 +33,34 @@ const IndexPage = () => {
             <p className="text-lg max-w-3xl">
                 For the 2021-22 school year, UCSD Wushu plans on offering wushu classes primarily in-person. As circumstances evolve, this page will be updated with new information on wushu classes.
             </p>
+            <h2 className="text-2xl pt-8 pb-4" style={{ fontVariationSettings: "'wdth' 125, 'wght' 700" }}>Classes</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-2 max-w-5xl">
+              <div className="border-solid py-6 pl-6 pr-8" style={{ borderWidth: "1px" }}>
+                <h1 className="text-xl pb-2" style={{ fontVariationSettings: "'wdth' 125, 'wght' 600" }}>Sunday Open Training</h1>
+                <p className="pb-6 text-gray-400">This all-levels class is taught outdoors, and will feature intensive training for beginning and advanced students alike, with the opportunity to practice more advanced techniques (e.g. flips).</p>
+                <p className="pb-6 text-gray-400">This class is coached primarily by <strong>David</strong>, with <strong>Bobby</strong> assisting for advanced students.</p>
+                <p className="pb-6 text-gray-400">Registration for this class is handled directly through UCSD Wushu. (In other words: you can just show up, and we can handle payment and membership later!)</p>
+                <p className="text-lg">Sunday 3-5p, <a class="border-b border-gray-700 hover:border-gray-100" href="https://goo.gl/maps/BQ5BSyPdMCShUUf8A">Marshall Field</a></p>
+              </div>
+              <div className="border-solid py-6 pl-6 pr-8" style={{ borderWidth: "1px" }}>
+                <h1 className="text-xl pb-2" style={{ fontVariationSettings: "'wdth' 125, 'wght' 600" }}>Tuesday Rec Training</h1>
+                <p className="pb-6 text-gray-400">This all-levels class is taught indoors, with its smaller class size allowing for more focused and detailed training and correction work.</p>
+                <p className="pb-6 text-gray-400">This class is coached by <strong>Bobby</strong>.</p>
+                <p className="pb-6 text-gray-400">Participating in this class requires registering via the UCSD Recreation website (see below)</p>
+                <p className="text-lg">Tuesday 10:30a-12:30p, RIMAC | <a href="" class="border-b border-gray-700 hover:border-gray-100">Register via rec.ucsd.edu</a></p>
+              </div>
+            </div>
+            <p className="text-lg max-w-3xl pt-6">
+              Wushu classes are divided into two categories: <strong>rec</strong> classes are offered through UCSD Recreation; as a result, payment and registration is handled through the UCSD Recreation website. On the other hand, <strong>non-rec</strong> classes are arranged directly with UCSD Wushu; as a result, we handle payment for these classes. This rec/non-rec divide helps us fund reasonable coaching compensation and other club activities.
+            </p>
+            <p className="text-lg max-w-3xl pt-3">
+              For non-rec classes, we accept payment in the following forms:
+              <ul className="list-disc pt-2">
+                <li>Venmo: @UCSD-Wushu</li>
+                <li>Zelle: ucsdwushu@gmail.com</li>
+                <li>In-person: contact a <Link to="/cabinet" className="border-b border-gray-700 hover:border-gray-100">cabinet member</Link> to make an arrangement</li>
+              </ul>
+            </p>
             <h2 className="text-2xl pt-8 pb-4" style={{ fontVariationSettings: "'wdth' 125, 'wght' 700" }}>Membership</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-2 max-w-5xl">
               <div className="border-solid py-6 pl-6 pr-8" style={{ borderWidth: "1px" }}>
@@ -41,33 +69,6 @@ const IndexPage = () => {
                 <p className="text-xl">TBD</p>
               </div>
             </div>
-            <p className="text-lg max-w-3xl pt-6">
-              Wushu classes are divided into two categories: <strong>rec</strong> classes are offered through UCSD Recreation; as a result, payment is handled through the UCSD Recreation website. On the other hand, <strong>non-rec</strong> classes are arranged directly with UCSD Wushu; as a result, we handle payment for these classes. This rec/non-rec divide helps us fund reasonable coaching compensation and other club activities.
-            </p>
-            <p className="text-lg max-w-3xl pt-3">
-              We accept payment in the following forms:
-              <ul className="list-disc pt-2">
-                <li>Venmo: @UCSD-Wushu</li>
-                <li>Zelle: ucsdwushu@gmail.com</li>
-                <li>In-person: contact a <Link to="/cabinet" className="border-b border-gray-700 hover:border-gray-100">cabinet member</Link> to make an arrangement</li>
-              </ul>
-            </p>
-            <h2 className="text-2xl pt-8 pb-4" style={{ fontVariationSettings: "'wdth' 125, 'wght' 700" }}>Classes</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-2 max-w-5xl">
-              <div className="border-solid py-6 pl-6 pr-8" style={{ borderWidth: "1px" }}>
-                <h1 className="text-xl pb-2" style={{ fontVariationSettings: "'wdth' 125, 'wght' 600" }}>Fundamentals Training</h1>
-                <p className="pb-6 text-gray-400">This class will focus on training fundamental techniques to build mastery of the basics. Beginner-friendly, but advanced students welcome!</p>
-                <p className="text-lg">Time and Location TBD</p>
-              </div>
-              <div className="border-solid py-6 pl-6 pr-8" style={{ borderWidth: "1px" }}>
-                <h1 className="text-xl pb-2" style={{ fontVariationSettings: "'wdth' 125, 'wght' 600" }}>Competition Training</h1>
-                <p className="pb-6 text-gray-400">This training focuses on a wide variety of techniques, with a slant towards preparation for competition (if the health situation allows). All levels welcome!</p>
-                <p className="text-lg">Time and Location TBD</p>
-              </div>
-            </div>
-            <p className="text-lg max-w-3xl pt-6">
-              Our training will be primarily in-person. More information on time and location will be provided after our GBM.
-            </p>
             <h2 className="text-2xl pt-8 pb-4" style={{ fontVariationSettings: "'wdth' 125, 'wght' 700" }}>Safety guidelines</h2>
             <p className="text-lg max-w-3xl">
                 In accordance with UCSD Recreation and local guidelines on COVID-19 safety, we will be observing the followingrules for all UCSD Wushu classes.
