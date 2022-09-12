@@ -14,6 +14,7 @@ module.exports = {
         path: `${__dirname}/src`,
       },
     },
+    `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -27,12 +28,6 @@ module.exports = {
         display: `minimal-ui`,
         icon: `src/images/logo.png`, // This path is relative to the root of the site.
       },
-    },
-    {
-      resolve: `gatsby-plugin-goatcounter`,
-      options: {
-        code: `ucsdwushu`
-      },
-    },
+    }
   ],
 }

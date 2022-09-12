@@ -1,5 +1,5 @@
 import React from "react"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 
 const Member = ({ title, name, desc, img }) => {
   return (
@@ -11,7 +11,7 @@ const Member = ({ title, name, desc, img }) => {
         </h1>
         <p className="text-lg">{desc}</p>
       </div>
-      <Img className="" alt="Socializing" sizes={{ ...img, aspectRatio: 3/2 }} />
+      <GatsbyImage className="" alt="Socializing" image={img} />
     </div>
   )
 }

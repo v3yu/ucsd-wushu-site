@@ -3,7 +3,7 @@ import React, { Component } from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { graphql, StaticQuery } from "gatsby"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
 import WushuBg from "../assets/wushu_bg_c.mp4"
 
@@ -47,10 +47,10 @@ class IndexPage extends Component {
               </h1>
                 <p className="text-lg">UCSD practices contemporary Chinese wushu, an exhibition martial art developed after 1949 in the People’s Republic of China based on traditional Chinese martial arts. Wushu performances and competition are based on routines, called forms (taolu), in various events representing different styles and types of weapons used in traditional Chinese martial arts. In addition, there is also sparring (sanda), although the club does not practice sparring.</p>
               </div>
-              <Img className="lg:w-1/2" alt="Our pres doin cool shit :)" sizes={{ ...data.wushu.childImageSharp.fluid, aspectRatio: 4 / 3 }} />
+              <GatsbyImage className="lg:w-1/2" alt="Our pres doin cool shit :)" image={data.wushu.childImageSharp.gatsbyImageData} />
             </div>
             <div className="border-solid border-b bg-black w-full flex flex-col lg:flex-row">
-              <Img className="lg:w-1/2 border-solid lg:border-r" alt="We vibin tho" sizes={{ ...data.wat.childImageSharp.fluid, aspectRatio: 4 / 3 }} />
+              <GatsbyImage className="lg:w-1/2" alt="Our pres doin cool shit :)" image={data.wat.childImageSharp.gatsbyImageData} />
               <div className="py-16 px-8 lg:px-16 lg:w-1/2 bg-teal-400 text-black">
                 <h1 className="mb-4 text-5xl leading-tight" style={{ fontVariationSettings: "'wdth' 125, 'wght' 700" }}>
                   <span className="align-text-top text-xl">02</span> I'm a beginner; can I join?
@@ -69,7 +69,7 @@ class IndexPage extends Component {
                 <br />
                 <p className="text-lg">To be part of the club, show up to at least two club events throughout the quarter, including but not limited to socials, fundraisers, performances, and competitions.</p>
               </div>
-              <Img className="lg:w-1/2" alt="Socializing" sizes={{ ...data.soc.childImageSharp.fluid, aspectRatio: 4 / 3 }} />
+              <GatsbyImage className="lg:w-1/2" alt="Socializing" sizes={{ ...data.soc.childImageSharp.fluid, aspectRatio: 4 / 3 }} />
             </div>
             */}
           </div>
@@ -79,29 +79,23 @@ class IndexPage extends Component {
   }
 }
 
-export default () => (
+const Index = () => (
   <StaticQuery
     query={graphql`
       query {
         wushu: file(relativePath: { eq: "images/wushu.jpg" }) {
           childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid_tracedSVG
-            }
+            gatsbyImageData(layout: CONSTRAINED, placeholder: TRACED_SVG, aspectRatio: 1.333)
           }
         }
         wat: file(relativePath: { eq: "images/wat.jpg" }) {
           childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid_tracedSVG
-            }
+            gatsbyImageData(layout: CONSTRAINED, placeholder: TRACED_SVG, aspectRatio: 1.333)
           }
         }
         soc: file(relativePath: { eq: "images/soc.jpg" }) {
           childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid_tracedSVG
-            }
+            gatsbyImageData(layout: CONSTRAINED, placeholder: TRACED_SVG, aspectRatio: 1.333)
           }
         }
       }
@@ -110,3 +104,4 @@ export default () => (
       <IndexPage data={data} />
     )} />
 )
+export default Index
