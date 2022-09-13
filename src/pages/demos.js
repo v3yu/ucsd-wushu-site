@@ -45,7 +45,7 @@ const IndexPage = () => {
             <h3 className="text-lg lg:text-xl text-gray-500" >Last updated <strong>September 12, 2022</strong></h3>
           </div>
           <BackgroundImage
-            className="p-8 lg:px-16 lg:py-12 flex-grow flex w-full text-xl lg:text-4xl z-10 border-solid border-b bg-tint"
+            className="p-8 lg:px-16 lg:py-12 flex-grow flex w-full text-xl lg:text-4xl z-10 border-solid border-b tiny-bg-tint"
             style={{ height: "50vh" }}
             fluid={data.taiko22.childImageSharp.fluid}>
             <h1 className="mt-auto text-lg lg:text-xl" style={{ fontVariationSettings: "'wdth' 125" }}>
