@@ -23,7 +23,7 @@ const IndexPage = () => {
           }
         }
       }
-      matsuri22: file(relativePath: { eq: "images/demos/2022matsuri.png" }) {
+      mae22: file(relativePath: { eq: "images/demos/2022mae.png" }) {
         childImageSharp {
           fluid(maxWidth: 1280) {
             ...GatsbyImageSharpFluid
@@ -42,28 +42,28 @@ const IndexPage = () => {
             <h1 className="text-3xl lg:text-4xl mt-auto lg:pr-64 z-10" style={{ fontVariationSettings: "'wdth' 125, 'wght' 700" }}>
               Demos
             </h1>
-            <h3 className="text-lg lg:text-xl text-gray-500" >Last updated <strong>September 12, 2022</strong></h3>
+            <h3 className="text-lg lg:text-xl text-gray-500" >Last updated <strong>September 24, 2022</strong></h3>
           </div>
           <BackgroundImage
             className="p-8 lg:px-16 lg:py-12 flex-grow flex w-full text-xl lg:text-4xl z-10 border-solid border-b tiny-bg-tint"
             style={{ height: "50vh" }}
-            fluid={data.taiko22.childImageSharp.fluid}>
+            fluid={data.mae22.childImageSharp.fluid}>
             <h1 className="mt-auto text-lg lg:text-xl" style={{ fontVariationSettings: "'wdth' 125" }}>
               Latest demo:
               <br />
-              <a href="https://www.youtube.com/watch?v=7Hv3kjV-KzM" class="border-b border-transparent hover:border-gray-100 transition duration-250 text-xl lg:text-3xl" style={{ fontVariationSettings: `'wdth' 125` }}><strong>2022 Asayake Taiko Spring Concert</strong> May 1, 2022</a>
+              <a href="https://www.youtube.com/watch?v=0qFrq4uYOhg" class="border-b border-transparent hover:border-gray-100 transition duration-250 text-xl lg:text-3xl" style={{ fontVariationSettings: `'wdth' 125` }}><strong>2022 Martial Arts Expo</strong> Sep 19, 2022</a>
             </h1>
           </BackgroundImage>
+          <Demo
+            name="2022 Asayake Taiko Spring Concert"
+            date="May 1, 2022"
+            link="https://www.youtube.com/watch?v=7Hv3kjV-KzM"
+            img={data.taiko22.childImageSharp.fluid} />
           <Demo
             name="2022 MASA Asian Night Market"
             date="Apr 15, 2022"
             link="https://www.youtube.com/watch?v=_OLgj8LlfFw"
-            img={data.masa22.childImageSharp.fluid} />
-          <Demo
-            name="2022 Matsuri"
-            date="Mar 31, 2022"
-            link="https://www.youtube.com/UCSDWushu"
-            img={data.matsuri22.childImageSharp.fluid} />          
+            img={data.masa22.childImageSharp.fluid} />          
         </div>
       </div>
     </Layout>
