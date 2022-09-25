@@ -10,52 +10,17 @@ import { GatsbyImage } from "gatsby-plugin-image"
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
     query {
-      kelly: file(relativePath: { eq: "images/cabinet/kelly.jpg" }) {
+      david: file(relativePath: { eq: "images/cabinet/david.jpeg" }) {
         childImageSharp {
           gatsbyImageData(layout: CONSTRAINED, placeholder: TRACED_SVG, aspectRatio: 1.5)
         }
       }
-      terence: file(relativePath: { eq: "images/cabinet/terence.jpg" }) {
-        childImageSharp {
-          gatsbyImageData(layout: CONSTRAINED, placeholder: TRACED_SVG, aspectRatio: 1.5)
-        }
-      }
-      sabrina: file(relativePath: { eq: "images/cabinet/sabrina.jpg" }) {
-        childImageSharp {
-          gatsbyImageData(layout: CONSTRAINED, placeholder: TRACED_SVG, aspectRatio: 1.5)
-        }
-      }
-      brian: file(relativePath: { eq: "images/cabinet/brian.jpg" }) {
-        childImageSharp {
-          gatsbyImageData(layout: CONSTRAINED, placeholder: TRACED_SVG, aspectRatio: 1.5)
-        }
-      }
-      sidney: file(relativePath: { eq: "images/cabinet/sidney.jpg" }) {
-        childImageSharp {
-          gatsbyImageData(layout: CONSTRAINED, placeholder: TRACED_SVG, aspectRatio: 1.5)
-        }
-      }
-      david: file(relativePath: { eq: "images/cabinet/david.jpg" }) {
-        childImageSharp {
-          gatsbyImageData(layout: CONSTRAINED, placeholder: TRACED_SVG, aspectRatio: 1.5)
-        }
-      }
-      kaitlyn: file(relativePath: { eq: "images/cabinet/kaitlyn.jpg" }) {
-        childImageSharp {
-          gatsbyImageData(layout: CONSTRAINED, placeholder: TRACED_SVG, aspectRatio: 1.5)
-        }
-      }
-      may: file(relativePath: { eq: "images/cabinet/may.jpg" }) {
+      yao: file(relativePath: { eq: "images/cabinet/yao.jpeg" }) {
         childImageSharp {
           gatsbyImageData(layout: CONSTRAINED, placeholder: TRACED_SVG, aspectRatio: 1.5)
         }
       }
       bobby: file(relativePath: { eq: "images/cabinet/bobby.jpg" }) {
-        childImageSharp {
-          gatsbyImageData(layout: CONSTRAINED, placeholder: TRACED_SVG, aspectRatio: 1.5)
-        }
-      }
-      yy: file(relativePath: { eq: "images/cabinet/yy.jpg" }) {
         childImageSharp {
           gatsbyImageData(layout: CONSTRAINED, placeholder: TRACED_SVG, aspectRatio: 1.5)
         }
@@ -86,35 +51,25 @@ const IndexPage = () => {
             <h1>Everything that isn't rec classes falls under the responsibility of <strong>cabinet</strong>. If you have any questions or concerns, talk to us—we don't bite!</h1>
           </div>
           <Member
-            title="Coach"
+            title="Bobby"
             name="Bobby Reilly"
-            desc="theres a homeless-looking dude who broke into the rimac to use their showers but somehow got lost and now spends his leisure time yelling at kids that their thumbs need to be tucked"
+            desc="Bobby is occasionally at practice - not to do anything productive, just to let his anger out on children."
             img={data.bobby.childImageSharp.gatsbyImageData} />
           <Member
-            title="Co-President"
-            name="May Ho"
-            desc="May Ho is a fourth year student in ERC college. Her major is Chemistry. She started wushu at UCSD Wushu because she wanted to learn a new style of martial arts."
-            img={data.may.childImageSharp.gatsbyImageData} />
-          <Member
-            title="Co-President, Treasurer"
-            name="Terence Liu"
-            desc="Terence is a fourth year Human Biology major and also the inventory manager of the UCSD Wushu Club. He became interested in martial arts when he watched Jet Li in “Once Upon a Time in China,” and has been a fan since childhood. Despite being in wushu for about a two years, Terence aims to improve himself. He has a sweet tooth and is a Nintendo fan. Also, swords. He likes swords ‘cuz they’re cool."
-            img={data.terence.childImageSharp.gatsbyImageData} />
-          <Member
-            title="Secretary"
+            title="President"
             name="Felicity Le"
             desc="Felicity Le is a third year Global Health major in Warren College. She joined wushu when she started college and has enjoyed it ever since. If she’s not at wushu, she can be found at dance practice! She has been dancing her whole life and could not imagine life without it. Along with this, Felicity can commonly be seen surrounded by green things and avocados - both loves of her life."
             img={data.felicity.childImageSharp.gatsbyImageData} />
           <Member
-            title="Demo Coordinator"
+            title="Coach"
             name="David Cao"
-            desc="David is a third year student at Sixth majoring in Computer Science and minoring in Political Science and Ethnic Studies. He started wushu in elementary school and has been practicing ever since. When he's not at wushu, you can find him dancing, filming videos, or helping design websites for clubs and other people :^)"
+            desc="David is a fourth-year computer science & ethnic studies double major in Sixth College. He started training in Shaolin (with the bald monks!) from childhood and has been practicing martial arts and Wushu ever since! When he's not at practice, he can be found dancing, working at SPACES, or generally ✨vibin✨ around campus :^)"
             img={data.david.childImageSharp.gatsbyImageData} />
           <Member
-            title="Public Relations"
-            name="Kelly Tran"
-            desc="Kelly Tran is a fourth year student at Sixth College majoring in Speculative Design and minoring in Design and Entrepreneurship. As an interdisciplinary, computing art student she has interest in all mediums of art especially photography."
-            img={data.kelly.childImageSharp.gatsbyImageData} />
+            title="Inventory Manager"
+            name="Yao Bi"
+            desc="Yao is a third year general biology major in sixth. she did wushu when she was younger for a few years and is now getting back into it. yao does not have free time. but in the fleeting moments of free time that do eventually present themselves, she indulges in exhilarating hobbies such as rewatching haikyuu for the nth time, being delusional about kpop, and succumbing to anxiety. yao can usually be found in lab hoping something doesn't explode (0/4 this week)."
+            img={data.yao.childImageSharp.gatsbyImageData} />
         </BackgroundImage>
     </Layout>
   )
