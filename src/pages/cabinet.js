@@ -30,7 +30,7 @@ const IndexPage = () => {
           gatsbyImageData(layout: CONSTRAINED, placeholder: TRACED_SVG, aspectRatio: 1.5)
         }
       }
-      all: file(relativePath: { eq: "images/cabinet/all_srs.jpg" }) {
+      all: file(relativePath: { eq: "images/cabinet/cab_esports_happy.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 1920) {
             ...GatsbyImageSharpFluid
@@ -46,7 +46,7 @@ const IndexPage = () => {
       <BackgroundImage
           fluid={data.all.childImageSharp.fluid}
           className="px-8 lg:px-16 pt-16 min-h-screen pb-20 lg:pl-xs"
-          style={{ columns: "3 400px", columnGap: "0.75rem", paddingTop: "65vh", backgroundAttachment: "fixed", backgroundColor: "rgba(0,0,0,.75)", backgroundBlendMode: "multiply" }}>
+          style={{ columns: "3 400px", columnGap: "0.75rem", paddingTop: "65vh", backgroundAttachment: "fixed", backgroundColor: "rgba(0,0,0,.50)", backgroundBlendMode: "multiply" }}>
           <div className="inline-block text-xl lg:text-3xl mb-8" style={{ fontVariationSettings: "'wdth' 125, 'wght' 400" }}>
             <h1>Everything that isn't rec classes falls under the responsibility of <strong>cabinet</strong>. If you have any questions or concerns, talk to us—we don't bite!</h1>
           </div>
