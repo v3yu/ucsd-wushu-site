@@ -20,6 +20,11 @@ const IndexPage = () => {
           gatsbyImageData(layout: CONSTRAINED, placeholder: TRACED_SVG, aspectRatio: 1.5)
         }
       }
+      keerit: file(relativePath: { eq: "images/cabinet/keerit.jpg" }) {
+        childImageSharp {
+          gatsbyImageData(layout: CONSTRAINED, placeholder: TRACED_SVG, aspectRatio: 1.5)
+        }
+      }
       bobby: file(relativePath: { eq: "images/cabinet/bobby.jpg" }) {
         childImageSharp {
           gatsbyImageData(layout: CONSTRAINED, placeholder: TRACED_SVG, aspectRatio: 1.5)
@@ -51,7 +56,7 @@ const IndexPage = () => {
             <h1>Everything that isn't rec classes falls under the responsibility of <strong>cabinet</strong>. If you have any questions or concerns, talk to us—we don't bite!</h1>
           </div>
           <Member
-            title="Bobby"
+            title="Freeloader"
             name="Bobby Reilly"
             desc="Bobby is occasionally at practice - not to do anything productive, just to let his anger out on children."
             img={data.bobby.childImageSharp.gatsbyImageData} />
@@ -70,6 +75,11 @@ const IndexPage = () => {
             name="Yao Bi"
             desc="Yao is a third year general biology major in sixth. she did wushu when she was younger for a few years and is now getting back into it. yao does not have free time. but in the fleeting moments of free time that do eventually present themselves, she indulges in exhilarating hobbies such as rewatching haikyuu for the nth time, being delusional about kpop, and succumbing to anxiety. yao can usually be found in lab hoping something doesn't explode (0/4 this week)."
             img={data.yao.childImageSharp.gatsbyImageData} />
+          <Member
+            title="Vice President"
+            name="Keerit Nijjar"
+            desc="Keerit is a fourth year business economics major in Marshall college. She joined Wushu last year and has loved every second... except stance walks. When not at Wushu, she can be found camping at Geisel and eating snacks. Please feel free to come up to Keerit because she loves meeting new people and making friends :)"
+            img={data.keerit.childImageSharp.gatsbyImageData} />
         </BackgroundImage>
     </Layout>
   )
