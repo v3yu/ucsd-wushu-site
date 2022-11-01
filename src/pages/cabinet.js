@@ -8,6 +8,8 @@ import BackgroundImage from "gatsby-background-image"
 import { GatsbyImage } from "gatsby-plugin-image"
 
 const IndexPage = () => {
+  const austin_text="Austin is a Cognitive Science major in Warren College that is interested in expanding the Esports field. As a keen competitor, Austin loves to draw parallels between creating better competitors and better people. He thinks the secret to both is talk therapy with his collection of Sanrio plushie pals. Eternal rivals with fellow historian Jeremy Lei, Austin focuses on captivating the UCSD Wushu club with his video editing skills to match Jeremy's knack for video ideas. While some say they compromise to create unrivaled content, it's clear that Austin is the \"more talented and beautiful individual\" (endorsed by Jeremy Lei). On the other hand, Cindy and Austin work together to create a comfortable social community for the students of UCSD Wushu. With an ultimate goal to get the club to travel out to Head in the Clouds Festival over the Summer, Cindy and Austin are planning ahead by planning exciting events to increase the morale of the whole club."
+
   const data = useStaticQuery(graphql`
     query {
       david: file(relativePath: { eq: "images/cabinet/david.jpeg" }) {
@@ -63,7 +65,7 @@ const IndexPage = () => {
           <Member
             title="President"
             name="Felicity Le"
-            desc="Felicity Le is a third year Global Health major in Warren College. She joined wushu when she started college and has enjoyed it ever since. If she’s not at wushu, she can be found at dance practice! She has been dancing her whole life and could not imagine life without it. Along with this, Felicity can commonly be seen surrounded by green things and avocados - both loves of her life."
+            desc="Felicity Le is a fourth year Global Health major in Warren College. She joined wushu when she started college and has enjoyed it ever since. If she’s not at wushu, she can be found at dance practice! She has been dancing her whole life and could not imagine life without it. Along with this, Felicity can commonly be seen surrounded by green things and avocados - both loves of her life."
             img={data.felicity.childImageSharp.gatsbyImageData} />
           <Member
             title="Coach"
@@ -79,6 +81,36 @@ const IndexPage = () => {
             title="Vice President"
             name="Keerit Nijjar"
             desc="Keerit is a fourth year business economics major in Marshall college. She joined Wushu last year and has loved every second... except stance walks. When not at Wushu, she can be found camping at Geisel and eating snacks. Please feel free to come up to Keerit because she loves meeting new people and making friends :)"
+            img={data.keerit.childImageSharp.gatsbyImageData} />
+          <Member
+            title="Historian / Social Chair"
+            name="Austin Soohoo"
+            desc={austin_text}
+            img={data.keerit.childImageSharp.gatsbyImageData} />
+          <Member
+            title="Demo Chair"
+            name="Nathan Chao"
+            desc="Nathan is a second year computer engineering major"
+            img={data.keerit.childImageSharp.gatsbyImageData} />
+          <Member
+            title="Treasurer"
+            name="Zhoujie Yu"
+            desc="Zhoujie is a second year nano engineering major"
+            img={data.keerit.childImageSharp.gatsbyImageData} />
+          <Member
+            title="Secretary"
+            name="Serena Xie"
+            desc="Serena is a second year Data Science major"
+            img={data.keerit.childImageSharp.gatsbyImageData} />
+          <Member
+            title="Historian"
+            name="Jeremy Lei"
+            desc="Jeremy is a third year mathematics-computer science major"
+            img={data.keerit.childImageSharp.gatsbyImageData} />
+          <Member
+            title="Social Chair"
+            name="Cindy Xu"
+            desc="Cindy is a third year ?? major"
             img={data.keerit.childImageSharp.gatsbyImageData} />
         </BackgroundImage>
     </Layout>
