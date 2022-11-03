@@ -34,7 +34,7 @@ const IndexPage = () => {
               For the 2022-23 school year, UCSD Wushu is offering in-person classes. Our classes will feature intensive training for individuals of all skill levels, beginning and advanced alike. All classes feature technique drills, advanced technique training (e.g. flips) for advanced students, and form teaching and practice.
             </p>
             <p className="text-lg max-w-3xl">
-              More information will be provided on this page and through the usual channels (i.e. Discord announcements) as the quarter progresses.
+              More information will be provided on this page and on Discord as the quarter progresses.
             </p>
             <h2 className="text-2xl pt-8 pb-4" style={{ fontVariationSettings: "'wdth' 125, 'wght' 700" }}>Classes</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-2 max-w-5xl">
@@ -54,7 +54,7 @@ const IndexPage = () => {
                 <h1 className="text-xl pb-2" style={{ fontVariationSettings: "'wdth' 125, 'wght' 600" }}>Wednesday Open Training</h1>
                 <p className="pb-6 text-gray-400">This class is coached by <strong>Serena</strong>.</p>
                 <p className="pb-6 text-gray-400">Registration for this class is handled directly through UCSD Wushu. (In other words: you can just show up, and we can handle payment and membership later!)</p>
-                <p className="text-lg">Wednesday 5:30-7:30p, Location TBD | $28</p>
+                <p className="text-lg">Wednesday 5:30-7:30p, Location TBD (Check Discord) | $28</p>
               </div>
             </div>
             <p className="text-lg max-w-3xl pt-6">
