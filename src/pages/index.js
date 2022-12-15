@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 import { graphql, StaticQuery } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
-import WushuBg from "../assets/wushu_bg_c.mp4"
+import WushuBg from "../assets/wushu_intro.mp4"
 
 class IndexPage extends Component {
   componentDidMount() {
