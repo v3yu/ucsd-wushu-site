@@ -56,6 +56,11 @@ const IndexPage = () => {
           gatsbyImageData(layout: CONSTRAINED, placeholder: TRACED_SVG, aspectRatio: 1.5)
         }
       }
+      serena: file(relativePath: { eq: "images/cabinet/serena.jpeg" }) {
+        childImageSharp {
+          gatsbyImageData(layout: CONSTRAINED, placeholder: TRACED_SVG, aspectRatio: 1.5)
+        }
+      }
       all: file(relativePath: { eq: "images/cabinet/cab_esports_happy.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 1920) {
@@ -120,7 +125,7 @@ const IndexPage = () => {
           <Member
             title="Secretary"
             name="Serena Xie"
-            desc="Serena is a second year Data Science major"
+            desc="Serena is a second year data science and chinese studies major at Marshall College. As a Jojo stan, she has mastered the art of posing and has thus obtained a stand power which enables her to function with a cursed amount of sleep."
             img={data.keerit.childImageSharp.gatsbyImageData} />
           <Member
             title="Historian"
