@@ -126,7 +126,7 @@ const IndexPage = () => {
             title="Secretary"
             name="Serena Xie"
             desc="Serena is a second year data science and chinese studies major at Marshall College. As a Jojo stan, she has mastered the art of posing and has thus obtained a stand power which enables her to function with a cursed amount of sleep."
-            img={data.keerit.childImageSharp.gatsbyImageData} />
+            img={data.serena.childImageSharp.gatsbyImageData} />
           <Member
             title="Historian"
             name="Jeremy Lei"
@@ -134,9 +134,7 @@ const IndexPage = () => {
             img={data.jeremy.childImageSharp.gatsbyImageData} />
           <Member
             title="Social Chair"
-            name="Cindy Xu"
-            desc="Cindy is a third year ?? major"
-            img={data.keerit.childImageSharp.gatsbyImageData} />
+            name="Cindy Xu"/>
         </BackgroundImage>
     </Layout>
   )
