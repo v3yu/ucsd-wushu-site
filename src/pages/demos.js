@@ -51,7 +51,7 @@ const IndexPage = () => {
             <h1 className="mt-auto text-lg lg:text-xl" style={{ fontVariationSettings: "'wdth' 125" }}>
               Latest demo:
               <br />
-              <a href="https://www.youtube.com/watch?v=0qFrq4uYOhg" class="border-b border-transparent hover:border-gray-100 transition duration-250 text-xl lg:text-3xl" style={{ fontVariationSettings: `'wdth' 125` }}><strong>2022 Wushow</strong> Nov 30, 2022</a>
+              <a href="https://www.youtube.com/watch?v=7yGQwOhKjh4" class="border-b border-transparent hover:border-gray-100 transition duration-250 text-xl lg:text-3xl" style={{ fontVariationSettings: `'wdth' 125` }}><strong>2022 Wushow</strong> Nov 30, 2022</a>
             </h1>
           </BackgroundImage>
           <Demo
