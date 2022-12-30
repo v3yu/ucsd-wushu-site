@@ -42,25 +42,25 @@ const IndexPage = () => {
                 <h1 className="text-xl pb-2" style={{ fontVariationSettings: "'wdth' 125, 'wght' 600" }}>Sunday Open Training</h1>
                 <p className="pb-6 text-gray-400">This class is coached by <strong>Nathan</strong>.</p>
                 <p className="pb-6 text-gray-400">Registration for this class is handled directly through UCSD Wushu. (In other words: you can just show up, and we can handle payment and membership later!)</p>
-                <p className="text-lg">Sunday 3-5p, Marshall Field | $28</p>
+                <p className="text-lg">Sunday 2:30-5p, Marshall Field | $28</p>
               </div>
               <div className="border-solid py-6 pl-6 pr-8" style={{ borderWidth: "1px" }}>
                 <h1 className="text-xl pb-2" style={{ fontVariationSettings: "'wdth' 125, 'wght' 600" }}>Rec Training</h1>
                 <p className="pb-6 text-gray-400">This class is coached by <strong>David</strong>.</p>
                 <p className="pb-6 text-gray-400">Participating in this class requires registering via the UCSD Recreation website (see below). As such, <strong>space is limited. Signing up also allows you to come to one additional practice a week without charge.</strong></p>
-                <p className="text-lg">Monday 3-5p, RIMAC Rec Room 3 | Register via <a className="purple" href="https://rec.ucsd.edu/Program/GetProgramDetails?courseId=c347f814-b6d1-4135-9b1f-f75256df5a98&semesterId=9862f197-a38e-4d9d-bc31-348fd4f119ae">rec.ucsd.edu</a></p>
+                <p className="text-lg">Monday 7-9p, Location TBD | Register via <a className="purple" href="https://rec.ucsd.edu/Program/GetProgramDetails?courseId=c347f814-b6d1-4135-9b1f-f75256df5a98&semesterId=9862f197-a38e-4d9d-bc31-348fd4f119ae">rec.ucsd.edu</a></p>
               </div>
               <div className="border-solid py-6 pl-6 pr-8" style={{ borderWidth: "1px" }}>
                 <h1 className="text-xl pb-2" style={{ fontVariationSettings: "'wdth' 125, 'wght' 600" }}>Wednesday Open Training</h1>
                 <p className="pb-6 text-gray-400">This class is coached by <strong>Serena</strong>.</p>
                 <p className="pb-6 text-gray-400">Registration for this class is handled directly through UCSD Wushu. (In other words: you can just show up, and we can handle payment and membership later!)</p>
-                <p className="text-lg">Wednesday 5:30-7:30p, Location TBD (Check Discord) | $28</p>
+                <p className="text-lg">Wednesday 5-7p, Location TBD (Check Discord) | $28</p>
               </div>
             </div>
-            <p className="text-lg max-w-3xl pt-6">
+            <p className="text-lg max-w-5xl pt-6">
               Wushu classes are divided into two categories: <strong>rec</strong> classes are offered through UCSD Recreation; as a result, payment and registration is handled through the UCSD Recreation website. On the other hand, <strong>non-rec</strong> classes are arranged directly with UCSD Wushu; as a result, we handle payment for these classes. This rec/non-rec divide helps us fund reasonable coaching compensation and other club activities.
             </p>
-            <p className="text-lg max-w-3xl pt-3">
+            <p className="text-lg max-w-5xl pt-3">
               For non-rec classes, we accept payment in the following forms:
               <ul className="list-disc pt-2">
                 <li>Venmo: @UCSD-Wushu</li>
@@ -68,9 +68,9 @@ const IndexPage = () => {
                 <li>In-person: contact a <Link to="/cabinet" className="border-b border-gray-700 hover:border-gray-100">cabinet member</Link> to make an arrangement</li>
               </ul>
             </p>
-            <h2 className="text-2xl pt-8 pb-4" style={{ fontVariationSettings: "'wdth' 125, 'wght' 700" }}>Safety guidelines</h2>
+            <h2 className="text-5xl pt-8 pb-4" style={{ fontVariationSettings: "'wdth' 125, 'wght' 700" }}>Safety guidelines</h2>
             <p className="text-lg max-w-3xl">
-                In accordance with UCSD Recreation and local guidelines on COVID-19 safety, we will be observing the followingrules for all UCSD Wushu classes.
+                In accordance with UCSD Recreation and local guidelines on COVID-19 safety, we will be observing the following rules for all UCSD Wushu classes.
               <ul className="list-disc pt-2">
                 <li>All members will maintain at least six feet of distance.</li>
                 <li>No weapons will be shared between members.</li>
