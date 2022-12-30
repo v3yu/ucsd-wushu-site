@@ -61,6 +61,11 @@ const IndexPage = () => {
           gatsbyImageData(layout: CONSTRAINED, placeholder: TRACED_SVG, aspectRatio: 1.5)
         }
       }
+      cindy: file(relativePath: { eq: "images/cabinet/cindy.jpg" }) {
+        childImageSharp {
+          gatsbyImageData(layout: CONSTRAINED, placeholder: TRACED_SVG, aspectRatio: 1.5)
+        }
+      }
       all: file(relativePath: { eq: "images/cabinet/cab_esports_happy.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 1920) {
@@ -133,8 +138,10 @@ const IndexPage = () => {
             desc={`Jeremy “Big J” is a third year Math-CS major at seventh college and half of the Historian of the club! After a break from wushu, he joined in the club his 2nd year and has been an active and passionate member since. As of this moment, he’s in the midst of a poster buying spree (do not show him any sales of waifu posters). His goal for this year is to produce content involving the awesome events/shenanigans for Wushu! Beyond that, perhaps he’ll finally pick up another form…….`}
             img={data.jeremy.childImageSharp.gatsbyImageData} />
           <Member
-            title="Social Chair"
-            name="Cindy Xu"/>
+            title="Public Relations / Social Chair"
+            name="Cindy Xu"
+            desc="Cindy is a 3rd year General Biology major. She started practicing wushu for fun at the young age of 8, and started competing seriously around the age of 13. Now that she is busy with college, she stopped training so rigorously and now enjoys it as a fun hobby and loves meeting the college wushu community. When not practicing, Cindy can be found researching insulin and diabetes at the lab she volunteers at, playing video games (LoL, TFT, Val) or spending nights out with friends."
+            img={data.cindy.childImageSharp.gatsbyImageData} />
         </BackgroundImage>
     </Layout>
   )
