@@ -32,7 +32,7 @@ const IndexPage = () => {
               <a
                 className="border-b border-transparent hover:border-gray-100"
                 style={{ fontVariationSettings: `'wdth' 125, 'wght' 700` }}
-                href="mailto:ucsdwushu@gmail.com">ucsdwushu@gmail.com</a>
+                href="mailto:wushu@ucsd.edu">wushu@ucsd.edu.com</a>
             </h1>
           </BackgroundImage>
         </div>
