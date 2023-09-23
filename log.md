@@ -5,3 +5,5 @@
 12/30/2022: Updated some stuff, pushed to live site
 
 6/22/2023: Updated classes for summer (no official practice)
+
+9/23/2023: No rec classes anymore. Currently no classes are listed so we will need to update that once we figure out where they are
