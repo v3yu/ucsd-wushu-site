@@ -38,6 +38,10 @@ body {
     color:purple;
 }
 
+.cyan {
+    color:cyan;
+}
+
 /*
 .bg-tint:hover::before {
     background-color: rgba(0, 0, 0, 0.85) !important;

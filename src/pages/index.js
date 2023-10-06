@@ -45,7 +45,9 @@ class IndexPage extends Component {
           <h1 className="text-3xl lg:text-4xl mt-auto lg:pr-64 z-10" style={{ fontVariationSettings: "'wdth' 105" }}>
             We swing swords and do backflips for fun. We are performers and competitors. And sometimes, we sell egg rolls.
             <br />
-            This is<span style={{ fontVariationSettings: "'wdth' 125, 'wght' 700" }}> UCSD Wushu.</span>
+            {/*sadge*/}
+            {/*This is<span style={{ fontVariationSettings: "'wdth' 125, 'wght' 700" }}> UCSD Wushu.</span>*/}
+            We are<span style={{ fontVariationSettings: "'wdth' 125, 'wght' 700" }}> Wushu @ UC San Diego.</span>
           </h1>
         </span>
         <div className="border-solid border-t min-h-screen flex bg-black z-0 lg:pl-xs">
@@ -65,7 +67,7 @@ class IndexPage extends Component {
                 <h1 className="mb-4 text-5xl leading-tight" style={{ fontVariationSettings: "'wdth' 125, 'wght' 700" }}>
                   <span className="align-text-top text-xl">02</span> I'm a beginner; can I join?
               </h1>
-                <p className="text-lg mb-8">We welcome people of all ages and experience levels to come share our passion by enrolling in wushu classes on rec.ucsd.edu as well as to form lifelong friendships by hanging out at club events.</p>
+                <p className="text-lg mb-8">We welcome people of all ages and experience levels to come share our passion by enrolling in wushu classes as well as to form lifelong friendships by hanging out at club events.</p>
                 <Link to="/class" className="transition duration-100 hover:bg-black hover:text-white py-3 px-4 text-lg inline-block w-2/3 border-solid border-black flex" style={{ borderWidth: "1px", fontVariationSettings: "'wght' 500" }}><span className="flex-grow">Enroll in a wushu class</span>🡪</Link>
               </div>
             </div>

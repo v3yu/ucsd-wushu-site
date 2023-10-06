@@ -57,13 +57,15 @@ const Nav = () => {
           <footer className="mt-8">
             <div>
               <ul className="mb-4 text-gray-300">
+                <li className="mt-1"><a className="transition duration-100 opacity-75 hover:opacity-100" href="https://linktr.ee/ucsdwushu">LinkTree</a></li>
+                <li className="mt-1"><a className="transition duration-100 opacity-75 hover:opacity-100" href="https://discord.com/invite/F6gSrcG">Discord</a></li>
                 <li className="mt-1"><a className="transition duration-100 opacity-75 hover:opacity-100" href="https://www.instagram.com/ucsdwushu/">Instagram</a></li>
                 <li className="mt-1"><a className="transition duration-100 opacity-75 hover:opacity-100" href="https://www.facebook.com/UCSDwushu">Facebook</a></li>
                 <li className="mt-1"><a className="transition duration-100 opacity-75 hover:opacity-100" href="https://www.youtube.com/channel/UCJJOaO7Kk3-u-qHxsRbrFuw">YouTube</a></li>
               </ul>
 
-              <p className="opacity-50 text-gray-400">© {new Date().getFullYear()} UCSD Wushu</p>
-              <p><a className="opacity-50 text-gray-400 transition duration-100 hover:opacity-100" href="https://cao.sh">Designed by David Cao</a></p>
+              <p className="text-xs opacity-50 text-gray-400">© {new Date().getFullYear()} Wushu @ UC San Diego</p>
+              <p><a className="text-xs opacity-50 text-gray-400 transition duration-100 hover:opacity-100" href="https://cao.sh">Designed by David Cao</a></p>
             </div>
           </footer>
 
