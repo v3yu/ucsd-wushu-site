@@ -11,12 +11,27 @@ const IndexPage = () => {
 
   const data = useStaticQuery(graphql`
     query {
-      david: file(relativePath: { eq: "images/cabinet/david.jpeg" }) {
+      yao: file(relativePath: { eq: "images/cabinet/yao.jpg" }) {
         childImageSharp {
           gatsbyImageData(layout: CONSTRAINED, placeholder: TRACED_SVG, aspectRatio: 1.5)
         }
       }
-      yao: file(relativePath: { eq: "images/cabinet/yao.jpeg" }) {
+      vivian: file(relativePath: { eq: "images/cabinet/vivian.jpg" }) {
+        childImageSharp {
+          gatsbyImageData(layout: CONSTRAINED, placeholder: TRACED_SVG, aspectRatio: 1.5)
+        }
+      }
+      maya: file(relativePath: { eq: "images/cabinet/maya.jpg" }) {
+        childImageSharp {
+          gatsbyImageData(layout: CONSTRAINED, placeholder: TRACED_SVG, aspectRatio: 1.5)
+        }
+      }
+      jessica: file(relativePath: { eq: "images/cabinet/jessica.jpg" }) {
+        childImageSharp {
+          gatsbyImageData(layout: CONSTRAINED, placeholder: TRACED_SVG, aspectRatio: 1.5)
+        }
+      }
+      jerwey: file(relativePath: { eq: "images/cabinet/jerwey.jpg" }) {
         childImageSharp {
           gatsbyImageData(layout: CONSTRAINED, placeholder: TRACED_SVG, aspectRatio: 1.5)
         }
@@ -27,11 +42,6 @@ const IndexPage = () => {
         }
       }
       bobby: file(relativePath: { eq: "images/cabinet/bobby.jpg" }) {
-        childImageSharp {
-          gatsbyImageData(layout: CONSTRAINED, placeholder: TRACED_SVG, aspectRatio: 1.5)
-        }
-      }
-      felicity: file(relativePath: { eq: "images/cabinet/felicity.jpg" }) {
         childImageSharp {
           gatsbyImageData(layout: CONSTRAINED, placeholder: TRACED_SVG, aspectRatio: 1.5)
         }
@@ -61,12 +71,7 @@ const IndexPage = () => {
           gatsbyImageData(layout: CONSTRAINED, placeholder: TRACED_SVG, aspectRatio: 1.5)
         }
       }
-      cindy: file(relativePath: { eq: "images/cabinet/cindy.jpg" }) {
-        childImageSharp {
-          gatsbyImageData(layout: CONSTRAINED, placeholder: TRACED_SVG, aspectRatio: 1.5)
-        }
-      }
-      all: file(relativePath: { eq: "images/cabinet/cab_esports_happy.jpg" }) {
+      all: file(relativePath: { eq: "images/cabinet/troll.jpeg" }) {
         childImageSharp {
           fluid(maxWidth: 1920) {
             ...GatsbyImageSharpFluid
@@ -99,13 +104,13 @@ const IndexPage = () => {
           <Member
             title="Internal"
             name="Austin Soohoo"
-            desc={`Austin is a Cognitive Science major in Warren College that is interested in expanding the Esports field. As a keen competitor, Austin loves to draw parallels between creating better competitors and better people. He thinks the secret to both is talk therapy with his collection of Sanrio plushie pals. Austin focuses on creating a comfortable social community for the students of UCSD Wushu. Austin plans exciting events to increase the morale of the whole club.`}
+            desc={`Austin is a Cognitive Science major in Warren College that is interested in expanding the Esports field. As a keen competitor, Austin loves to draw parallels between creating better competitors and better people. He thinks the secret to life is talk therapy with his collection of Sanrio plushie pals. Austin focuses on creating a comfortable social community for club by planning exciting events, increasing the morale of the whole club.`}
             img={data.austin.childImageSharp.gatsbyImageData}
             /*useSmallFont="1"*/ />
           <Member
             title="Inventory Manager"
             name="Yao Bi"
-            desc="Yao is a fourth year general biology major in sixth. she did wushu when she was younger for a few years and is now getting back into it. yao does not have free time. but in the fleeting moments of free time that do eventually present themselves, she indulges in exhilarating hobbies such as rewatching haikyuu for the nth time, being delusional about kpop, and succumbing to anxiety. yao can usually be found in lab hoping something doesn't explode (0/4 this week)."
+            desc="Yao is a fourth year general biology major in sixth. She has been doing wushu since her 2nd year. Yao does not have free time. But in the fleeting moments of free time that do eventually present themselves, she indulges in exhilarating hobbies such as rewatching haikyuu for the nth time, being delusional about kpop, and succumbing to anxiety. Yao can usually be found in lab hoping something doesn't explode (0/4 this week)."
             img={data.yao.childImageSharp.gatsbyImageData} />
           <Member
             title="President"
@@ -115,18 +120,38 @@ const IndexPage = () => {
           <Member
             title="Coach"
             name="Nathan"
-            desc={`Nathan is a third year computer engineering major in seventh college. He started practicing Shaolin when he was a wee little lad (Chaolin MonkTM). He would like everyone to know that he is, in fact, an aunt. An aunt that needs to stop doing the default Fortnite dance. Nathan can usually be found complaining about his programming assignments but not actually doing them; opting, instead, to teach other valuable members of UCSD Wushu how to do the wave (hi ben, wave!). He also derives a lot of joy out of yelling. just in general. "it's just cathartic y'know?" - Nathan at some point probably.`}
+            desc={`Nathan is a third year computer engineering major in seventh college. He started practicing Shaolin when he was a wee little lad (Chaolin MonkTM). He would like everyone to know that he is, in fact, an aunt. An aunt that needs to stop doing the default Fortnite dance. Nathan can usually be found complaining about his programming assignments but not actually doing them; opting, instead, to teach other valuable members of the club how to do the wave (hi ben, wave!). He also derives a lot of joy out of yelling. just in general. "it's just cathartic y'know?" - Nathan at some point probably.`}
             img={data.nathan.childImageSharp.gatsbyImageData} />
+          <Member
+            title="Historian"
+            name="Jerwey Guo"
+            desc="Jerwey is a sociology major at seventh college. He spends most of his time laying on the ground, doing absolutely nothing. Maybe if he got up, stretched, and started practicing he would get better, but that's on him. In his downtime (laying around after working a closing shift) he consistently listens to music while contemplating his existence."
+            img={data.jerwey.childImageSharp.gatsbyImageData} />
+          <Member
+            title="Treasurer"
+            name="Jessica Ju"
+            desc="Jessica is a second year linguistics major in ERC, and she has been practicing wushu for about four years."
+            img={data.jessica.childImageSharp.gatsbyImageData} />
           <Member
             title="Demo Coordinator"
             name="Jeremy Lei"
-            desc={`Jeremy “Big J” is a fourth year Math-CS major at seventh college. After a long break from wushu, he's looking for a return to form.`}
+            desc={`Jeremy “Big J” is a fourth year Math-CS major at seventh college. After his return to wushu, he has lost all sense of shame (though I’m not sure he had any to begin with) and can frequently be found doing wushu in the wild (especially hammerfists). When not performing this strange ritual, he can usually be found downing Tapex’s fried chicken and milk tea or procrastinating on his homework.`}
             img={data.jeremy.childImageSharp.gatsbyImageData} />
+          <Member
+            title="Secretary"
+            name="Maya Chang"
+            desc="She is a second year math major at seventh college. She has been doing wushu for 8 years. If you ever need help with math homework she is happy to help you with your homework over finishing her own math homework."
+            img={data.maya.childImageSharp.gatsbyImageData} />
           <Member
             title="Freeloader"
             name="Bobby Reilly"
             desc="Bobby is occasionally at practice - not to do anything productive, just to let his anger out on children."
             img={data.bobby.childImageSharp.gatsbyImageData} />
+          <Member
+            title="External"
+            name="Vivian Yu"
+            desc="Vivian is a second-year Math-CS major in ERC. She is an international student from Hong Kong whose experience in wushu prior to joining UCSD Wushu is comprised entirely of watching Chinese historical fantasy wuxia dramas. She is currently learning straightsword."
+            img={data.vivian.childImageSharp.gatsbyImageData} />
         </BackgroundImage>
     </Layout>
   )

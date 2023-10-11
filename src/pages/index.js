@@ -47,7 +47,7 @@ class IndexPage extends Component {
             <br />
             {/*sadge*/}
             {/*This is<span style={{ fontVariationSettings: "'wdth' 125, 'wght' 700" }}> UCSD Wushu.</span>*/}
-            We are<span style={{ fontVariationSettings: "'wdth' 125, 'wght' 700" }}> Wushu @ UC San Diego.</span>
+            We are<span style={{ fontVariationSettings: "'wdth' 125, 'wght' 700" }}> Wushu Club @ UC San Diego.</span>
           </h1>
         </span>
         <div className="border-solid border-t min-h-screen flex bg-black z-0 lg:pl-xs">

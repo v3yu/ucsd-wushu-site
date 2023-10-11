@@ -68,7 +68,7 @@ const IndexPage = () => {
                 <h1 className="text-xl pb-2" style={{ fontVariationSettings: "'wdth' 125, 'wght' 600" }}>Location TBD</h1>
               </BackgroundImage>
               <div className="border-solid py-6 pl-6 pr-8" style={{ borderWidth: "1px" }}>
-                <h1 className="text-xl pb-2" style={{ fontVariationSettings: "'wdth' 125, 'wght' 600" }}>Weapons & Demo Class</h1>
+                <h1 className="text-xl pb-2" style={{ fontVariationSettings: "'wdth' 125, 'wght' 600" }}>Competition & Demo Class</h1>
                 <p className="pb-6 text-gray-400">This class is coached by <strong><Link to="/cabinet" className="border-b border-gray-700 hover:border-gray-100">Nathan</Link></strong>.</p>
                 <p className="pb-6 text-gray-400">This class is targeted towards more advanced students, but anyone is still welcome to come</p>
                 <p className="text-lg">Saturday 3-pm, Track and Field </p>
@@ -85,9 +85,9 @@ const IndexPage = () => {
             <p className="text-lg max-w-5xl pt-3">
               We accept payment in the following forms:
               <ul className="list-disc pt-2">
-                <li>Venmo: @UCSD-Wushu</li>
+                <li>Venmo: @Wushu-UCSD</li>
                 <li>Zelle: ucsdwushu@gmail.com</li>
-                <li>In-person: contact a <Link to="/cabinet" className="border-b border-gray-700 hover:border-gray-100">cabinet member</Link> to make an arrangement</li>
+                <li>Cash: contact a <Link to="/cabinet" className="border-b border-gray-700 hover:border-gray-100">cabinet member</Link> to make an arrangement</li>
               </ul>
             </p>
             <h2 className="text-5xl pt-8 pb-4" style={{ fontVariationSettings: "'wdth' 125, 'wght' 700" }}>Safety guidelines</h2>
