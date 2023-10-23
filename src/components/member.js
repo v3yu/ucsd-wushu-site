@@ -5,9 +5,9 @@ const Member = ({ title, name, desc, img, useSmallFont }) => {
 
   let fontSize
   if(useSmallFont)
-    fontSize = "text-base"
+    fontSize = "text-sm"
   else
-    fontSize = "text-lg"
+    fontSize = "text-base"
 
   return (
     <div className="inline-block text-3xl lg:text-4xl border-solid mb-3 w-full bg-black" style={{ borderWidth: "1px" }}>

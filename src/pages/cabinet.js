@@ -105,7 +105,7 @@ const IndexPage = () => {
           <Member
             title="Coach"
             name="Nathan"
-            desc={`Nathan is a third year computer engineering major in seventh college. He started practicing Shaolin when he was a wee little lad (Chaolin MonkTM). He would like everyone to know that he is, in fact, an aunt. An aunt that needs to stop doing the default Fortnite dance. Nathan can usually be found complaining about his programming assignments but not actually doing them; opting, instead, to teach other valuable members of the club how to do the wave (hi ben, wave!). He also derives a lot of joy out of yelling. just in general. "it's just cathartic y'know?" - Nathan at some point probably.`}
+            desc={`Nathan is a third year computer engineering major in seventh college. He started practicing Shaolin when he was a wee little lad (Chaolin MonkTM). Nathan can usually be found complaining about his programming assignments but not actually doing them; opting, instead, to teach other valuable members of the club how to do the wave (hi ben, wave!). He also derives a lot of joy out of yelling. "it's just cathartic y'know?" - Nathan at some point probably.`}
             img={data.nathan.childImageSharp.gatsbyImageData} />
           <Member
             title="Internal"
@@ -116,7 +116,7 @@ const IndexPage = () => {
           <Member
             title="Treasurer"
             name="Jessica Ju"
-            desc="Jessica is a second year linguistics major in ERC, and she has been practicing wushu for about four years."
+            desc="Jessica is a second year linguistics major at ERC. In her four years of wushu experience she has practiced various forms including straight sword, fan, and more recently picked up the emei piercers. She is also passionate about learning mandarin, sometimes practicing by watching Chinese dramas."
             img={data.jessica.childImageSharp.gatsbyImageData} />
           <Member
             title="Demo Coordinator"
@@ -133,7 +133,7 @@ const IndexPage = () => {
           <Member
             title="President"
             name="Zhoujie Yu"
-            desc="Zhoujie Yu is third year Nanoengineering student at Warren college. She did a few years of wushu as a kid and is now getting back into it with UCSD Wushu. As the treasurer, she focuses on managing club funds and funding for competition. When not idling away time in the library with fellow wushu library residents, she can often be found consuming art or enjoying food. She also likes to try out different outdoor activities when not in hermit or studying mode."
+            desc="Zhoujie Yu is a third year Nanoengineering student at Warren college. She did a few years of wushu as a kid and is getting back into it with UCSD Wushu. When not idling away time in the library with fellow wushu library residents, she can often be found consuming art or enjoying food (probably bread). She also likes to try out different outdoor activities when not in hermit or studying mode."
             img={data.zhoujie.childImageSharp.gatsbyImageData} />
           <Member
             title="Coach"
@@ -158,7 +158,7 @@ const IndexPage = () => {
           <Member
             title="Secretary"
             name="Maya Chang"
-            desc="She is a second year math major at seventh college. She has been doing wushu for 8 years. If you ever need help with math homework she is happy to help you with your homework over finishing her own math homework."
+            desc="Maya is a second year math major at seventh college. After 8 years of wushu she has mastered the yells of the southern fist, and looks forward to new forms. Outside of the club, her passion for math means she will gladly help you with your homework, even if it means neglecting her own unfinished homework."
             img={data.maya.childImageSharp.gatsbyImageData} />
           <Member
             title="Freeloader"
