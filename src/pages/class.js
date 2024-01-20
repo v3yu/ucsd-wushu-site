@@ -34,7 +34,7 @@ const IndexPage = () => {
             <h1 className="text-3xl lg:text-4xl mt-auto lg:pr-64 z-10" style={{ fontVariationSettings: "'wdth' 125, 'wght' 700" }}>
               Class
             </h1>
-              <h3 className="text-lg lg:text-xl text-gray-500" >Last updated <strong>Oct 6, 2023</strong></h3>
+              <h3 className="text-lg lg:text-xl text-gray-500" >Last updated <strong>Jan 20, 2024</strong></h3>
           </BackgroundImage>
           
           <div className="px-8 lg:px-16 py-16">
@@ -53,34 +53,34 @@ const IndexPage = () => {
                 <h1 className="text-xl pb-2" style={{ fontVariationSettings: "'wdth' 125, 'wght' 600" }}>Sunday Open Training</h1>
                 <p className="pb-6 text-gray-400">This class is coached by <strong><Link to="/cabinet" className="border-b border-gray-700 hover:border-gray-100">Nathan</Link></strong>.</p>
                 <p className="pb-6 text-gray-400">A class for everyone</p>
-                <p className="text-lg">Sunday 3-5pm, Track and Field</p>
+                <p className="text-lg">Sunday 2-4pm, Track and Field</p>
               </div>
               <BackgroundImage className="border-solid py-6 pl-6 pr-8" style={{ borderWidth: "1px" }} fluid={data.track.childImageSharp.fluid}>
                 <h1 className="text-xl pb-2" style={{ fontVariationSettings: "'wdth' 125, 'wght' 600" }}></h1>
               </BackgroundImage>
               <div className="border-solid py-6 pl-6 pr-8" style={{ borderWidth: "1px" }}>
-                <h1 className="text-xl pb-2" style={{ fontVariationSettings: "'wdth' 125, 'wght' 600" }}>Indoor Training</h1>
+                <h1 className="text-xl pb-2" style={{ fontVariationSettings: "'wdth' 125, 'wght' 600" }}>Monday Open Training</h1>
                 <p className="pb-6 text-gray-400">This class is coached by <strong><Link to="/cabinet" className="border-b border-gray-700 hover:border-gray-100">Serena</Link></strong>.</p>
                 <p className="pb-6 text-gray-400">We usually work on combos and basics</p>
-                <p className="text-lg">Tuesday 4-6pm, Check Discord for Location</p>
+                <p className="text-lg">Monday 4-6pm, Check Discord for Location</p>
               </div>
               <BackgroundImage className="border-solid py-6 pl-6 pr-8" style={{ borderWidth: "1px" }} fluid={data.masa20.childImageSharp.fluid}>
-                <h1 className="text-xl pb-2" style={{ fontVariationSettings: "'wdth' 125, 'wght' 600" }}>Location TBD</h1>
+                <h1 className="text-xl pb-2" style={{ fontVariationSettings: "'wdth' 125, 'wght' 600" }}></h1>
               </BackgroundImage>
               <div className="border-solid py-6 pl-6 pr-8" style={{ borderWidth: "1px" }}>
-                <h1 className="text-xl pb-2" style={{ fontVariationSettings: "'wdth' 125, 'wght' 600" }}>Competition & Demo Class</h1>
+                <h1 className="text-xl pb-2" style={{ fontVariationSettings: "'wdth' 125, 'wght' 600" }}>Saturday Golden Dragon</h1>
                 <p className="pb-6 text-gray-400">This class is coached by <strong><Link to="/cabinet" className="border-b border-gray-700 hover:border-gray-100">Nathan</Link></strong>.</p>
-                <p className="pb-6 text-gray-400">This class is targeted towards more advanced students, but anyone is still welcome to come</p>
-                <p className="text-lg">Saturday 3-pm, Track and Field </p>
+                <p className="pb-6 text-gray-400">This class is targeted towards more advanced students preparing for competition. Check Discord to meetup for rides</p>
+                <p className="text-lg">Saturday 6pm-, Golden Dragon </p>
               </div>
-              <BackgroundImage className="border-solid py-6 pl-6 pr-8" style={{ borderWidth: "1px" }} fluid={data.track.childImageSharp.fluid}>
+              <BackgroundImage className="border-solid py-6 pl-6 pr-8" style={{ borderWidth: "1px" }} fluid={data.masa20.childImageSharp.fluid}>
                 <h1 className="text-xl pb-2" style={{ fontVariationSettings: "'wdth' 125, 'wght' 600" }}></h1>
               </BackgroundImage>
       </div>}
             <p className="text-lg max-w-5xl pt-6">
               All classes are arranged directly with the club. For the Fall quarter, the pricing will be as follows:
-              <li>$30 For the first class</li>
-              <li>$20 For each additional class</li>
+              <li>Monday and Sunday classes are $20 each</li>
+              <li>Saturday class is $80 for the quarter or $10 per visit</li>
             </p>
             <p className="text-lg max-w-5xl pt-3">
               We accept payment in the following forms:
