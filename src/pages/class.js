@@ -41,7 +41,7 @@ const IndexPage = () => {
             <p className="text-lg max-w-3xl">
             <br></br>For the 2023-24 school year, our club will be hosting our own practices and no longer requires registering through UCSD Recreation. 
             <br></br><br></br>Our classes feature intensive training for individuals of all skill levels. These practices feature technique drills, advanced technique training (e.g. flips), and form tutoring. 
-            <br></br><br></br>For live updates regarding classes, please join our <a className="cyan" href="https://discord.com/invite/F6gSrcG">Discord</a><br></br>
+            <br></br><br></br>For live updates regarding classes (especially because of weather), please join our <a className="cyan" href="https://discord.com/invite/F6gSrcG">Discord</a><br></br>
             </p>
             <p className="text-lg max-w-3xl">
               
@@ -59,10 +59,19 @@ const IndexPage = () => {
                 <h1 className="text-xl pb-2" style={{ fontVariationSettings: "'wdth' 125, 'wght' 600" }}></h1>
               </BackgroundImage>
               <div className="border-solid py-6 pl-6 pr-8" style={{ borderWidth: "1px" }}>
-                <h1 className="text-xl pb-2" style={{ fontVariationSettings: "'wdth' 125, 'wght' 600" }}>Monday Open Training</h1>
+                <h1 className="text-xl pb-2" style={{ fontVariationSettings: "'wdth' 125, 'wght' 600" }}>Monday Indoor Training</h1>
                 <p className="pb-6 text-gray-400">This class is coached by <strong><Link to="/cabinet" className="border-b border-gray-700 hover:border-gray-100">Serena</Link></strong>.</p>
                 <p className="pb-6 text-gray-400">We usually work on combos and basics</p>
-                <p className="text-lg">Monday 4-6pm, Check Discord for Location</p>
+                <p className="text-lg">Monday 4-6pm, Rimac, Check Discord</p>
+              </div>
+              <BackgroundImage className="border-solid py-6 pl-6 pr-8" style={{ borderWidth: "1px" }} fluid={data.masa20.childImageSharp.fluid}>
+                <h1 className="text-xl pb-2" style={{ fontVariationSettings: "'wdth' 125, 'wght' 600" }}></h1>
+              </BackgroundImage>
+              <div className="border-solid py-6 pl-6 pr-8" style={{ borderWidth: "1px" }}>
+                <h1 className="text-xl pb-2" style={{ fontVariationSettings: "'wdth' 125, 'wght' 600" }}>Friday Open Training</h1>
+                <p className="pb-6 text-gray-400">This class is coached by Alex.</p>
+                <p className="pb-6 text-gray-400">We focus on improving the quality of your combos, basics, and forms </p>
+                <p className="text-lg">Friday 4-6pm, Check Discord for location </p>
               </div>
               <BackgroundImage className="border-solid py-6 pl-6 pr-8" style={{ borderWidth: "1px" }} fluid={data.masa20.childImageSharp.fluid}>
                 <h1 className="text-xl pb-2" style={{ fontVariationSettings: "'wdth' 125, 'wght' 600" }}></h1>
@@ -79,7 +88,7 @@ const IndexPage = () => {
       </div>}
             <p className="text-lg max-w-5xl pt-6">
               All classes are arranged directly with the club. For the Fall quarter, the pricing will be as follows:
-              <li>Monday and Sunday classes are $20 each</li>
+              <li>Monday, Friday, and Sunday classes are $20 each</li>
               <li>Saturday class is $80 for the quarter or $10 per visit</li>
             </p>
             <p className="text-lg max-w-5xl pt-3">

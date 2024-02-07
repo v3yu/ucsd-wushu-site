@@ -17,3 +17,5 @@ push: scp -r public/. wushu@acsweb.ucsd.edu:~wushu/public_html
 10/23/2023: More cab edits
 
 1/20/2024: Class changes
+
+2/7/2024: Alex's class
