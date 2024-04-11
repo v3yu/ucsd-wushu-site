@@ -76,6 +76,11 @@ const IndexPage = () => {
           gatsbyImageData(layout: CONSTRAINED, placeholder: TRACED_SVG, aspectRatio: 1.5)
         }
       }
+      alex: file(relativePath: { eq: "images/cabinet/alex.jpg" }) {
+        childImageSharp {
+          gatsbyImageData(layout: CONSTRAINED, placeholder: TRACED_SVG, aspectRatio: 1.5)
+        }
+      }
       all: file(relativePath: { eq: "images/cabinet/troll.jpeg" }) {
         childImageSharp {
           fluid(maxWidth: 1920) {
@@ -108,6 +113,11 @@ const IndexPage = () => {
             desc={`Nathan is a third year computer engineering major in seventh college. He started practicing Shaolin when he was a wee little lad (Chaolin MonkTM). Nathan can usually be found complaining about his programming assignments but not actually doing them; opting, instead, to teach other valuable members of the club how to do the wave (hi ben, wave!). He also derives a lot of joy out of yelling. "it's just cathartic y'know?" - Nathan at some point probably.`}
             img={data.nathan.childImageSharp.gatsbyImageData} />
           <Member
+            title="Coach"
+            name="Serena Xie"
+            desc="Serena is a third year data science and chinese studies major at Marshall College. As a Jojo stan, she has mastered the art of posing and has thus obtained a stand power which enables her to function with a cursed amount of sleep."
+            img={data.serena.childImageSharp.gatsbyImageData} />
+          <Member
             title="Internal"
             name="Austin Soohoo"
             desc={`Austin is a Cognitive Science major at Warren College. Most of his time at school is spent making sure Wushu Club is a safe place for not only the members but for his plushies as well. Much of his bubbly(ish) personality stems from the daily talk therapy he incorporates with them. If you ever need a person to talk to, a shoulder to cry on, or someone to talk to other than Big J, do not hesitate to borrow Austin's ear and maybe a plushie while your at it too!`}
@@ -137,9 +147,9 @@ const IndexPage = () => {
             img={data.zhoujie.childImageSharp.gatsbyImageData} />
           <Member
             title="Coach"
-            name="Serena Xie"
-            desc="Serena is a third year data science and chinese studies major at Marshall College. As a Jojo stan, she has mastered the art of posing and has thus obtained a stand power which enables her to function with a cursed amount of sleep."
-            img={data.serena.childImageSharp.gatsbyImageData} />
+            name="Alex Zhang"
+            desc="Alex Zhang is a third year ICAM major and CSE minor. He started wushu in Beijing, China as a kid (elementary school), but stopped practicing regularly in high school. He then started training for competitive wushu in college, later getting a spot on USA taolu B team. Outside of wushu, he plays a lot of video games - Mostly fps games and occasionally plays cs casually."
+            img={data.alex.childImageSharp.gatsbyImageData} />
           <Member
             title="External"
             name="Vivian Yu"

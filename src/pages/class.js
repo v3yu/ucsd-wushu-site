@@ -53,42 +53,33 @@ const IndexPage = () => {
                 <h1 className="text-xl pb-2" style={{ fontVariationSettings: "'wdth' 125, 'wght' 600" }}>Sunday Open Training</h1>
                 <p className="pb-6 text-gray-400">This class is coached by <strong><Link to="/cabinet" className="border-b border-gray-700 hover:border-gray-100">Nathan</Link></strong>.</p>
                 <p className="pb-6 text-gray-400">A class for everyone</p>
-                <p className="text-lg">Sunday 2-4pm, Track and Field</p>
+                <p className="text-lg">Sunday 3-5pm, Track and Field</p>
               </div>
               <BackgroundImage className="border-solid py-6 pl-6 pr-8" style={{ borderWidth: "1px" }} fluid={data.track.childImageSharp.fluid}>
                 <h1 className="text-xl pb-2" style={{ fontVariationSettings: "'wdth' 125, 'wght' 600" }}></h1>
               </BackgroundImage>
               <div className="border-solid py-6 pl-6 pr-8" style={{ borderWidth: "1px" }}>
-                <h1 className="text-xl pb-2" style={{ fontVariationSettings: "'wdth' 125, 'wght' 600" }}>Monday Indoor Training</h1>
-                <p className="pb-6 text-gray-400">This class is coached by <strong><Link to="/cabinet" className="border-b border-gray-700 hover:border-gray-100">Serena</Link></strong>.</p>
-                <p className="pb-6 text-gray-400">We usually work on combos and basics</p>
-                <p className="text-lg">Monday 4-6pm, Rimac, Check Discord</p>
-              </div>
-              <BackgroundImage className="border-solid py-6 pl-6 pr-8" style={{ borderWidth: "1px" }} fluid={data.masa20.childImageSharp.fluid}>
-                <h1 className="text-xl pb-2" style={{ fontVariationSettings: "'wdth' 125, 'wght' 600" }}></h1>
-              </BackgroundImage>
-              <div className="border-solid py-6 pl-6 pr-8" style={{ borderWidth: "1px" }}>
-                <h1 className="text-xl pb-2" style={{ fontVariationSettings: "'wdth' 125, 'wght' 600" }}>Friday Open Training</h1>
-                <p className="pb-6 text-gray-400">This class is coached by Alex.</p>
+                <h1 className="text-xl pb-2" style={{ fontVariationSettings: "'wdth' 125, 'wght' 600" }}>Thursday Indoor Training</h1>
+                <p className="pb-6 text-gray-400">This class is coached by <strong><Link to="/cabinet" className="border-b border-gray-700 hover:border-gray-100">Alex</Link></strong>.</p>
                 <p className="pb-6 text-gray-400">We focus on improving the quality of your combos, basics, and forms </p>
-                <p className="text-lg">Friday 4-6pm, Check Discord for location </p>
+                <p className="text-lg">Thursday 4-6pm, Check Discord for location (Usually Rimac)</p>
               </div>
               <BackgroundImage className="border-solid py-6 pl-6 pr-8" style={{ borderWidth: "1px" }} fluid={data.masa20.childImageSharp.fluid}>
                 <h1 className="text-xl pb-2" style={{ fontVariationSettings: "'wdth' 125, 'wght' 600" }}></h1>
               </BackgroundImage>
               <div className="border-solid py-6 pl-6 pr-8" style={{ borderWidth: "1px" }}>
-                <h1 className="text-xl pb-2" style={{ fontVariationSettings: "'wdth' 125, 'wght' 600" }}>Saturday Golden Dragon</h1>
-                <p className="pb-6 text-gray-400">This class is coached by <strong><Link to="/cabinet" className="border-b border-gray-700 hover:border-gray-100">Nathan</Link></strong>.</p>
-                <p className="pb-6 text-gray-400">This class is targeted towards more advanced students preparing for competition. Check Discord to meetup for rides</p>
-                <p className="text-lg">Saturday 6pm-, Golden Dragon </p>
+                <h1 className="text-xl pb-2" style={{ fontVariationSettings: "'wdth' 125, 'wght' 600" }}>Saturday Jumps Practice</h1>
+                <p className="pb-6 text-gray-400">This class is coached by Seth.</p>
+                <p className="pb-6 text-gray-400">This class is for working on all things jumps. We practice at a carpeted external studio, so check Discord to meetup for rides</p>
+                <p className="text-lg">Saturday 6:30-10pm, Golden Dragon </p>
               </div>
               <BackgroundImage className="border-solid py-6 pl-6 pr-8" style={{ borderWidth: "1px" }} fluid={data.masa20.childImageSharp.fluid}>
                 <h1 className="text-xl pb-2" style={{ fontVariationSettings: "'wdth' 125, 'wght' 600" }}></h1>
               </BackgroundImage>
       </div>}
             <p className="text-lg max-w-5xl pt-6">
-              All classes are arranged directly with the club. For the Fall quarter, the pricing will be as follows:
-              <li>Monday, Friday, and Sunday classes are $20 each</li>
+              All classes are arranged directly with the club. For Spring quarter, the pricing will be as follows:
+              <li>Thursday and Sunday classes are $20 each</li>
               <li>Saturday class is $80 for the quarter or $10 per visit</li>
             </p>
             <p className="text-lg max-w-5xl pt-3">
