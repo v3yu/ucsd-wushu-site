@@ -34,7 +34,7 @@ const IndexPage = () => {
             <h1 className="text-3xl lg:text-4xl mt-auto lg:pr-64 z-10" style={{ fontVariationSettings: "'wdth' 125, 'wght' 700" }}>
               Class
             </h1>
-              <h3 className="text-lg lg:text-xl text-gray-500" >Last updated <strong>Jan 20, 2024</strong></h3>
+              <h3 className="text-lg lg:text-xl text-gray-500" >Last updated <strong>April 18, 2024</strong></h3>
           </BackgroundImage>
           
           <div className="px-8 lg:px-16 py-16">
@@ -62,7 +62,7 @@ const IndexPage = () => {
                 <h1 className="text-xl pb-2" style={{ fontVariationSettings: "'wdth' 125, 'wght' 600" }}>Thursday Indoor Training</h1>
                 <p className="pb-6 text-gray-400">This class is coached by <strong><Link to="/cabinet" className="border-b border-gray-700 hover:border-gray-100">Alex</Link></strong>.</p>
                 <p className="pb-6 text-gray-400">We focus on improving the quality of your combos, basics, and forms </p>
-                <p className="text-lg">Thursday 4-6pm, Check Discord for location (Usually Rimac)</p>
+                <p className="text-lg">Wednesday 3-5pm, Check Discord for location (Usually Rimac)</p>
               </div>
               <BackgroundImage className="border-solid py-6 pl-6 pr-8" style={{ borderWidth: "1px" }} fluid={data.masa20.childImageSharp.fluid}>
                 <h1 className="text-xl pb-2" style={{ fontVariationSettings: "'wdth' 125, 'wght' 600" }}></h1>
@@ -79,7 +79,7 @@ const IndexPage = () => {
       </div>}
             <p className="text-lg max-w-5xl pt-6">
               All classes are arranged directly with the club. For Spring quarter, the pricing will be as follows:
-              <li>Thursday and Sunday classes are $20 each</li>
+              <li>Thursday and Sunday classes are $25 each</li>
               <li>Saturday class is $80 for the quarter or $10 per visit</li>
             </p>
             <p className="text-lg max-w-5xl pt-3">
