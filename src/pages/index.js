@@ -55,9 +55,9 @@ class IndexPage extends Component {
             <div className="border-solid border-b bg-black w-full flex flex-col lg:flex-row">
               <div className="py-16 px-8 lg:px-16 lg:w-1/2 border-solid lg:border-r">
                 <h1 className="mb-4 text-5xl leading-tight" style={{ fontVariationSettings: "'wdth' 125, 'wght' 700" }}>
-                  <span className="align-text-top text-xl">01</span> What is wushu?
+                  <span className="align-text-top text-xl">01</span> What is Wushu?
               </h1>
-                <p className="text-lg">UCSD practices contemporary Chinese wushu, an exhibition martial art developed after 1949 in the People’s Republic of China based on traditional Chinese martial arts. Wushu performances and competition are based on routines, called forms (taolu), in various events representing different styles and types of weapons used in traditional Chinese martial arts. In addition, there is also sparring (sanda), although the club does not practice sparring.</p>
+                <p className="text-lg">UCSD practices contemporary Chinese Wushu, an exhibition martial art developed after 1949 in the People’s Republic of China based on traditional Chinese martial arts. Wushu performances and competition are based on routines, called forms (taolu), in various events representing different styles and types of weapons used in traditional Chinese martial arts. In addition, there is also sparring (sanda), although the club does not practice sparring.</p>
               </div>
               <GatsbyImage className="lg:w-1/2" alt="Our pres doin cool shit :)" image={data.wushu.childImageSharp.gatsbyImageData} />
             </div>
