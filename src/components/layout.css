@@ -16,6 +16,9 @@ body {
     margin: 0;
 }
 
+.sidebarlinks {
+    
+}
 .bg-tint {
     background-color: rgba(0, 0, 0, .80) !important;
     background-blend-mode: multiply !important;
