@@ -16,9 +16,6 @@ body {
     margin: 0;
 }
 
-.sidebarlinks {
-    
-}
 .bg-tint {
     background-color: rgba(0, 0, 0, .80) !important;
     background-blend-mode: multiply !important;
@@ -43,6 +40,24 @@ body {
 
 .cyan {
     color:cyan;
+}
+
+.navlist {
+    font-weight:150;
+    color:cyan;
+    margin-top: 1;
+    font-size:x-large;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.hoverlink {
+    transition-duration: 500ms;
+    color: cyan;
+}
+.hoverlink:hover {
+color:aliceblue;
+
 }
 
 /*

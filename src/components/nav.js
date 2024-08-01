@@ -1,6 +1,6 @@
 import { Link } from "gatsby"
 import React, { useEffect } from "react"
-import logo from "../images/ucsd-wushu-logo-white.svg"
+import logo from "../images/logo1.png"
 
 const Nav = () => {
   useEffect(() => {
@@ -41,17 +41,17 @@ const Nav = () => {
         </div>
         <div id="navstuff" className="lg:flex lg:flex-col lg:flex-grow hidden">
           <ul className="flex-grow mt-16">
-            <li className="text-2xl mt-1 text-gray-100">
-              <Link to="/class" className="transition duration-100 inline-block border-b border-transparent hover:border-gray-100">Class</Link>
+            <li className="navlist">
+              <Link to="/class" className="hoverlink">Class</Link>
             </li>
-            <li className="text-2xl mt-1 text-gray-100">
-              <Link to="/cabinet" className="transition duration-100 inline-block border-b border-transparent hover:border-gray-100">Cabinet</Link>
+            <li className="navlist">
+              <Link to="/cabinet" className="hoverlink">Cabinet</Link>
             </li>
-            <li className="text-2xl mt-1 text-gray-100">
-              <Link to="/demos" className="transition duration-100 inline-block border-b border-transparent hover:border-gray-100">Demos</Link>
+            <li className="navlist">
+              <Link to="/demos" className="hoverlink">Demos</Link>
             </li>
-            <li className="text-2xl mt-1 text-gray-100">
-              <Link to="/contact" className="transition duration-100 inline-block border-b border-transparent hover:border-gray-100">Contact</Link>
+            <li className="navlist">
+              <Link to="/contact" className="hoverlink">Contact</Link>
             </li>
           </ul>
           <footer className="mt-8">

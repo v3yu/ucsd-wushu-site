@@ -23,3 +23,5 @@ push: scp -r public/. wushu@acsweb.ucsd.edu:~wushu/public_html
 4/11/2024: Update Class schedule, added Alex to cabinet page
 
 4/18/2024: Fix class schedule
+
+1/8/2024: handover to vivian :D replaced wushu class times with placeholders, minor visual tweaks and cleaned up/moved repeated class styles into stylesheet
