@@ -9,11 +9,21 @@
 html {
     font-family: "Aktiv Grotesk VF", sans-serif;
     margin: 0;
-    background: black;
+    background-image: url("../images/backgroundimg.png");
 }
 
 body {
     margin: 0;
+}
+
+/*---- TOP BAR ----*/
+.topbar {
+    position:fixed;
+    top:0;left:0;
+    width:100%;
+    height:1%;
+    background:cyan;
+    z-index:6;
 }
 
 .bg-tint {
@@ -50,14 +60,24 @@ body {
     text-transform: uppercase;
     letter-spacing: 4px;
 }
-
+.navlist2 {
+    font-weight:150;
+    color:lightgray;
+    margin-top: 1;
+    font-size:small;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    transition-duration:500ms;
+}
+.navlist2:hover {
+    color:white;
+}
 .hoverlink {
     transition-duration: 500ms;
     color: cyan;
 }
 .hoverlink:hover {
 color:aliceblue;
-
 }
 
 /*

@@ -15,7 +15,14 @@ const IndexPage = () => {
           }
         }
       }
-      masa20: file(relativePath: { eq: "images/demo.jpg" }) {
+        rimac: file(relativePath: { eq: "images/class/rimac.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 1280) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      gd: file(relativePath: { eq: "images/gd.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 1280) {
             ...GatsbyImageSharpFluid
@@ -30,7 +37,7 @@ const IndexPage = () => {
       <SEO title="Home" />
       <div className="lg:pl-xs">
         <div className="border-solid lg:border-l min-w-full min-h-screen">
-          <BackgroundImage className="px-8 lg:px-16 pt-40 lg:pt-16 pb-8 lg:pb-16 border-solid border-b bg-tint" fluid={data.masa20.childImageSharp.fluid}>
+          <BackgroundImage className="px-8 lg:px-16 pt-40 lg:pt-16 pb-8 lg:pb-16 border-solid border-b bg-tint" fluid={data.track.childImageSharp.fluid}>
             <h1 className="text-3xl lg:text-4xl mt-auto lg:pr-64 z-10" style={{ fontVariationSettings: "'wdth' 125, 'wght' 700" }}>
               Class
             </h1>
@@ -64,7 +71,7 @@ const IndexPage = () => {
                 <p className="pb-6 text-gray-400">We focus on improving the quality of your combos, basics, and forms </p>
                 <p className="text-lg">TBD</p>
               </div>
-              <BackgroundImage className="border-solid py-6 pl-6 pr-8" style={{ borderWidth: "1px" }} fluid={data.masa20.childImageSharp.fluid}>
+              <BackgroundImage className="border-solid py-6 pl-6 pr-8" style={{ borderWidth: "1px" }} fluid={data.rimac.childImageSharp.fluid}>
                 <h1 className="text-xl pb-2" style={{ fontVariationSettings: "'wdth' 125, 'wght' 600" }}></h1>
               </BackgroundImage>
               <div className="border-solid py-6 pl-6 pr-8" style={{ borderWidth: "1px" }}>
@@ -73,7 +80,7 @@ const IndexPage = () => {
                 <p className="pb-6 text-gray-400">This class is for working on all things jumps. We practice at a carpeted external studio, so check Discord to meetup for rides</p>
                 <p className="text-lg">TBD</p>
               </div>
-              <BackgroundImage className="border-solid py-6 pl-6 pr-8" style={{ borderWidth: "1px" }} fluid={data.masa20.childImageSharp.fluid}>
+              <BackgroundImage className="border-solid py-6 pl-6 pr-8" style={{ borderWidth: "1px" }} fluid={data.gd.childImageSharp.fluid}>
                 <h1 className="text-xl pb-2" style={{ fontVariationSettings: "'wdth' 125, 'wght' 600" }}></h1>
               </BackgroundImage>
       </div>}

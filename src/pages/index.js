@@ -50,7 +50,7 @@ class IndexPage extends Component {
             We are<span style={{ fontVariationSettings: "'wdth' 125, 'wght' 700" }}> Wushu Club @ UC San Diego.</span>
           </h1>
         </span>
-        <div className="border-solid border-t min-h-screen flex bg-black z-0 lg:pl-xs">
+        <div className="border-solid border-t min-h-screen flex z-0 lg:pl-xs">
           <div className="border-solid lg:border-l min-w-full">
             <div className="border-solid border-b bg-black w-full flex flex-col lg:flex-row">
               <div className="py-16 px-8 lg:px-16 lg:w-1/2 border-solid lg:border-r">
@@ -68,7 +68,7 @@ class IndexPage extends Component {
                   <span className="align-text-top text-xl">02</span> I'm a beginner; can I join?
               </h1>
                 <p className="text-lg mb-8">We welcome people of all ages and experience levels to come share our passion by enrolling in wushu classes as well as to form lifelong friendships by hanging out at club events.</p>
-                <Link to="/class" className="transition duration-100 hover:bg-black hover:text-white py-3 px-4 text-lg inline-block w-2/3 border-solid border-black flex" style={{ borderWidth: "1px", fontVariationSettings: "'wght' 500" }}><span className="flex-grow">Enroll in a wushu class</span>🡪</Link>
+                <Link to="/class" className="transition duration-500 hover:bg-black hover:text-white py-3 px-4 text-lg inline-block w-2/3 border-solid border-black flex" style={{ borderWidth: "1px", fontVariationSettings: "'wght' 500" }}><span className="flex-grow">Enroll in a wushu class</span>🡪</Link>
               </div>
             </div>
             {/*

@@ -17,7 +17,9 @@ const Nav = () => {
   })
 
   return (
+
     <header id="header" className="lg:bg-transparent lg:h-screen fixed left-0 top-0 flex-none w-full lg:max-w-xs text-white z-50">
+              <div className="topbar"></div>
       <div className="lg:flex flex-col lg:min-h-screen lg:pt-12 lg:pb-22 lg:px-16 py-6 px-8">
         <div className="flex flex-row">
           <Link
@@ -57,11 +59,11 @@ const Nav = () => {
           <footer className="mt-8">
             <div>
               <ul className="mb-4 text-gray-300">
-                <li className="mt-1"><a className="transition duration-100 opacity-75 hover:opacity-100" href="https://linktr.ee/ucsdwushu">LinkTree</a></li>
-                <li className="mt-1"><a className="transition duration-100 opacity-75 hover:opacity-100" href="https://discord.com/invite/F6gSrcG">Discord</a></li>
-                <li className="mt-1"><a className="transition duration-100 opacity-75 hover:opacity-100" href="https://www.instagram.com/ucsdwushu/">Instagram</a></li>
-                <li className="mt-1"><a className="transition duration-100 opacity-75 hover:opacity-100" href="https://www.facebook.com/UCSDwushu">Facebook</a></li>
-                <li className="mt-1"><a className="transition duration-100 opacity-75 hover:opacity-100" href="https://www.youtube.com/channel/UCJJOaO7Kk3-u-qHxsRbrFuw">YouTube</a></li>
+                <li className="mt-1"><a className="navlist2" href="https://linktr.ee/ucsdwushu">LinkTree</a></li>
+                <li className="mt-1"><a className="navlist2" href="https://discord.com/invite/F6gSrcG">Discord</a></li>
+                <li className="mt-1"><a className="navlist2" href="https://www.instagram.com/ucsdwushu/">Instagram</a></li>
+                <li className="mt-1"><a className="navlist2">Facebook</a></li>
+                <li className="mt-1"><a className="navlist2" href="https://www.youtube.com/channel/UCJJOaO7Kk3-u-qHxsRbrFuw">YouTube</a></li>
               </ul>
 
               <p className="text-xs opacity-50 text-gray-400">© {new Date().getFullYear()} Wushu Club<br></br>@ UC San Diego</p>
