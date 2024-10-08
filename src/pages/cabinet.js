@@ -23,17 +23,17 @@ const IndexPage = () => {
       }
       jessica: file(relativePath: { eq: "images/cabinet/jessica.jpg" }) {
         childImageSharp {
-          gatsbyImageData(layout: CONSTRAINED, placeholder: TRACED_SVG, aspectRatio: 1.5)
+          gatsbyImageData(layout: CONSTRAINED, placeholder: TRACED_SVG, aspectRatio: 1)
         }
       }
       jerwey: file(relativePath: { eq: "images/cabinet/jerwey.jpg" }) {
         childImageSharp {
-          gatsbyImageData(layout: CONSTRAINED, placeholder: TRACED_SVG, aspectRatio: 1.5)
+          gatsbyImageData(layout: CONSTRAINED, placeholder: TRACED_SVG, aspectRatio: 1)
         }
       }
-      james: file(relativePath: { eq: "images/cabinet/james.jpg" }) {
+      james: file(relativePath: { eq: "images/cabinet/james.JPG" }) {
         childImageSharp {
-          gatsbyImageData(layout: CONSTRAINED, placeholder: TRACED_SVG, aspectRatio: 1.5)
+          gatsbyImageData(layout: CONSTRAINED, placeholder: TRACED_SVG, aspectRatio: 1)
         }
       }
       bobby: file(relativePath: { eq: "images/cabinet/bobby.jpg" }) {
@@ -53,7 +53,7 @@ const IndexPage = () => {
       }
       zhoujie: file(relativePath: { eq: "images/cabinet/zhoujie.jpg" }) {
         childImageSharp {
-          gatsbyImageData(layout: CONSTRAINED, placeholder: TRACED_SVG, aspectRatio: 1.5)
+          gatsbyImageData(layout: CONSTRAINED, placeholder: TRACED_SVG, aspectRatio: 1)
         }
       }
       serena: file(relativePath: { eq: "images/cabinet/serena.jpeg" }) {
@@ -61,7 +61,12 @@ const IndexPage = () => {
           gatsbyImageData(layout: CONSTRAINED, placeholder: TRACED_SVG, aspectRatio: 1.5)
         }
       }
-      alex: file(relativePath: { eq: "images/cabinet/alex.jpg" }) {
+      novak: file(relativePath: { eq: "images/cabinet/novak.jpg" }) {
+        childImageSharp {
+          gatsbyImageData(layout: CONSTRAINED, placeholder: TRACED_SVG, aspectRatio: 1.5)
+        }
+      }
+              alex: file(relativePath: { eq: "images/cabinet/alex.jpg" }) {
         childImageSharp {
           gatsbyImageData(layout: CONSTRAINED, placeholder: TRACED_SVG, aspectRatio: 1.5)
         }
@@ -119,11 +124,6 @@ const IndexPage = () => {
             name="Jeremy Lei"
             desc={`Jeremy “Big J” is a fourth year Math-CS major at seventh college. After his return to wushu, he has lost all sense of shame (though I’m not sure he had any to begin with) and can frequently be found doing wushu in the wild (especially hammerfists). When not performing this strange ritual, he can usually be found downing Tapex’s fried chicken and milk tea or procrastinating on his homework.`}
             img={data.jeremy.childImageSharp.gatsbyImageData} /> */}
-          <Member
-            title="Historian"
-            name="Novak Tatarevic"
-            desc=""
-            img={data.novak.childImageSharp.gatsbyImageData}/>
 
           {/*Right Column*/}
           <Member
@@ -146,11 +146,16 @@ const IndexPage = () => {
             name="Benson Zhu"
             desc="Benson is a second year Math CS major with a minor in Data Science who enjoys all things silly. When he isn’t distracted and rotting at Geisel, he enjoys baking and playing video games. As the club secretary, he takes care of logistics behind the scenes, and occasionally buying items for club events. Behind his rbf and excessively loud metal music, he is always up for a conversation, so do say hi and maybe he will even have an extra baked treat for you!"
             img={data.benson.childImageSharp.gatsbyImageData} />
-          <Member
+            <Member
+            title="Historian"
+            name="Novak Tatarevic"
+            desc=""
+            img={data.novak.childImageSharp.gatsbyImageData}/>
+          {/*<Member
             title="Freeloader"
             name="Bobby Reilly"
             desc="Bobby is occasionally at practice - not to do anything productive, just to let his anger out on children."
-            img={data.bobby.childImageSharp.gatsbyImageData} />
+            img={data.bobby.childImageSharp.gatsbyImageData} />*/}
           
         </BackgroundImage>
     </Layout>
