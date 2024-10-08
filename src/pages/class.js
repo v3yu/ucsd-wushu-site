@@ -66,7 +66,7 @@ const IndexPage = () => {
               </BackgroundImage>
               <div className="border-solid py-6 pl-6 pr-8" style={{ borderWidth: "1px" }}>
                 <h1 className="text-xl pb-2" style={{ fontVariationSettings: "'wdth' 125, 'wght' 600" }}>Wednesday</h1>
-                <p className="pb-6 text-gray-400">This class is coached by <strong><Link to="/cabinet" className="border-b border-gray-700 hover:border-gray-100">TBD</Link></strong>.</p>
+                <p className="pb-6 text-gray-400">This class is coached by <strong><Link to="/cabinet" className="border-b border-gray-700 hover:border-gray-100">Serena</Link></strong>.</p>
                 <p className="pb-6 text-gray-400">We focus on improving the quality of your combos, basics, and forms </p>
                 <p className="text-lg">3pm-5pm</p>
               </div>
@@ -75,7 +75,7 @@ const IndexPage = () => {
               </BackgroundImage>
               <div className="border-solid py-6 pl-6 pr-8" style={{ borderWidth: "1px" }}>
                 <h1 className="text-xl pb-2" style={{ fontVariationSettings: "'wdth' 125, 'wght' 600" }}>Thursday</h1>
-                <p className="pb-6 text-gray-400">This class is coached by <strong><Link to="/cabinet" className="border-b border-gray-700 hover:border-gray-100">TBD</Link></strong></p>
+                <p className="pb-6 text-gray-400">This class is coached by <strong><Link to="/cabinet" className="border-b border-gray-700 hover:border-gray-100">Alex</Link></strong></p>
                 <p className="pb-6 text-gray-400">We focus on improving the quality of your combos, basics, and forms</p>
                 <p className="text-lg">5pm-7pm</p>
               </div>
