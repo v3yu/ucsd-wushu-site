@@ -11,17 +11,12 @@ const IndexPage = () => {
 
   const data = useStaticQuery(graphql`
     query {
-      yao: file(relativePath: { eq: "images/cabinet/yao.jpg" }) {
-        childImageSharp {
-          gatsbyImageData(layout: CONSTRAINED, placeholder: TRACED_SVG, aspectRatio: 1.5)
-        }
-      }
       vivian: file(relativePath: { eq: "images/cabinet/vivian.jpg" }) {
         childImageSharp {
           gatsbyImageData(layout: CONSTRAINED, placeholder: TRACED_SVG, aspectRatio: 1.5)
         }
       }
-      maya: file(relativePath: { eq: "images/cabinet/maya.jpg" }) {
+      benson: file(relativePath: { eq: "images/cabinet/benson.jpg" }) {
         childImageSharp {
           gatsbyImageData(layout: CONSTRAINED, placeholder: TRACED_SVG, aspectRatio: 1.5)
         }
@@ -36,7 +31,7 @@ const IndexPage = () => {
           gatsbyImageData(layout: CONSTRAINED, placeholder: TRACED_SVG, aspectRatio: 1.5)
         }
       }
-      keerit: file(relativePath: { eq: "images/cabinet/keerit.jpg" }) {
+      james: file(relativePath: { eq: "images/cabinet/james.jpg" }) {
         childImageSharp {
           gatsbyImageData(layout: CONSTRAINED, placeholder: TRACED_SVG, aspectRatio: 1.5)
         }
@@ -46,17 +41,7 @@ const IndexPage = () => {
           gatsbyImageData(layout: CONSTRAINED, placeholder: TRACED_SVG, aspectRatio: 1.5)
         }
       }
-      austin: file(relativePath: { eq: "images/cabinet/austin.jpg" }) {
-        childImageSharp {
-          gatsbyImageData(layout: CONSTRAINED, placeholder: TRACED_SVG, aspectRatio: 1.5)
-        }
-      }
       jeremy: file(relativePath: { eq: "images/cabinet/jeremy.jpg" }) {
-        childImageSharp {
-          gatsbyImageData(layout: CONSTRAINED, placeholder: TRACED_SVG, aspectRatio: 1.5)
-        }
-      }
-      james: file(relativePath: { eq: "images/cabinet/james.jpg" }) {
         childImageSharp {
           gatsbyImageData(layout: CONSTRAINED, placeholder: TRACED_SVG, aspectRatio: 1.5)
         }
@@ -81,7 +66,7 @@ const IndexPage = () => {
           gatsbyImageData(layout: CONSTRAINED, placeholder: TRACED_SVG, aspectRatio: 1.5)
         }
       }
-      all: file(relativePath: { eq: "images/cabinet/troll.jpeg" }) {
+      all: file(relativePath: { eq: "images/cabinet/troll.JPG" }) {
         childImageSharp {
           fluid(maxWidth: 1920) {
             ...GatsbyImageSharpFluid
@@ -104,72 +89,63 @@ const IndexPage = () => {
           {/*Left Column*/}
           <Member
             title="Vice President"
-            name="Keerit Nijjar"
-            desc="Keerit is a business economics major in Marshall college. She joined Wushu two years ago and has loved every second... except stance walks. When not at Wushu, she can be found camping at Geisel and eating snacks. Please feel free to come up to Keerit because she loves meeting new people and making friends :)"
-            img={data.keerit.childImageSharp.gatsbyImageData} />
+            name="James Young"
+            desc="James is a senior in Computer Science with Bioinformatics at Revelle College. He revels in collaging what is purposive without purpose. Attainment of this desired end entails erratic enrollment in electives, labor in unrelated labs, and living in different colleges (5/8✓). Young James's first martial art was taijiquan, as it didn't strike as very martial. He now practices more ostensibly combative forms—changquan and jianshu—albeit even less combatively."
+            img={data.james.childImageSharp.gatsbyImageData} />
           <Member
-            title="Coach"
+            title="Coach & Demo Choreographer"
             name="Nathan"
-            desc={`Nathan is a third year computer engineering major in seventh college. He started practicing Shaolin when he was a wee little lad (Chaolin MonkTM). Nathan can usually be found complaining about his programming assignments but not actually doing them; opting, instead, to teach other valuable members of the club how to do the wave (hi ben, wave!). He also derives a lot of joy out of yelling. "it's just cathartic y'know?" - Nathan at some point probably.`}
+            desc="Nathan is a fourth year Computer Engineering major… that’s all."
             img={data.nathan.childImageSharp.gatsbyImageData} />
           <Member
             title="Coach"
             name="Serena Xie"
-            desc="Serena is a third year data science and chinese studies major at Marshall College. As a Jojo stan, she has mastered the art of posing and has thus obtained a stand power which enables her to function with a cursed amount of sleep."
+            desc="Serena is a fourth year data science and chinese studies major at Marshall College. As a Jojo stan, she has mastered the art of posing and has thus obtained a stand power which enables her to function with a cursed amount of sleep."
             img={data.serena.childImageSharp.gatsbyImageData} />
           <Member
             title="Internal"
-            name="Austin Soohoo"
-            desc={`Austin is a Cognitive Science major at Warren College. Most of his time at school is spent making sure Wushu Club is a safe place for not only the members but for his plushies as well. Much of his bubbly(ish) personality stems from the daily talk therapy he incorporates with them. If you ever need a person to talk to, a shoulder to cry on, or someone to talk to other than Big J, do not hesitate to borrow Austin's ear and maybe a plushie while your at it too!`}
-            img={data.austin.childImageSharp.gatsbyImageData}
+            name="Jerwey Guo"
+            desc={`Jerwey is a third year Sociology major. Some may say he is going through an existential crisis: an ex-vegetarian, non-STEM pre-med, constantly deciding whether he should land that jump on his two broken knees. However, knowing him, things are probably less serious in the places where he stands—it’s all made up. As club internal, he’ll keep you in the loop about the what, where, and when of all our exciting events, so stick around and keep your eyes peeled for the fun!`}
+            img={data.jerwey.childImageSharp.gatsbyImageData}
             /*useSmallFont="1"*/ />
           <Member
             title="Treasurer"
             name="Jessica Ju"
-            desc="Jessica is a second year linguistics major at ERC. In her four years of wushu experience she has practiced various forms including straight sword, fan, and more recently picked up the emei piercers. She is also passionate about learning mandarin, sometimes practicing by watching Chinese dramas."
+            desc="Jessica is a third year Linguistics (Speech and Language Sciences) major. In her five years of wushu experience she has practiced various forms including straight sword, fan, and emei piercers. She is also passionate about learning Mandarin and enjoys watching Chinese dramas and listening to Chinese music. As treasurer, she manages class payments, organizes fundraisers, and handles funding and reimbursements."
             img={data.jessica.childImageSharp.gatsbyImageData} />
+          {/* dw we will never let jeremy retire
           <Member
             title="Demo Coordinator"
             name="Jeremy Lei"
             desc={`Jeremy “Big J” is a fourth year Math-CS major at seventh college. After his return to wushu, he has lost all sense of shame (though I’m not sure he had any to begin with) and can frequently be found doing wushu in the wild (especially hammerfists). When not performing this strange ritual, he can usually be found downing Tapex’s fried chicken and milk tea or procrastinating on his homework.`}
-            img={data.jeremy.childImageSharp.gatsbyImageData} />
+            img={data.jeremy.childImageSharp.gatsbyImageData} /> */}
           <Member
             title="Historian"
-            name="Jerwey Guo"
-            desc="Jerwey is a sociology major at seventh college. He spends most of his time laying on the ground, doing absolutely nothing. Maybe if he got up, stretched, and started practicing he would get better, but that's on him. In his downtime (laying around after working a closing shift) he consistently listens to music while contemplating his existence."
-            img={data.jerwey.childImageSharp.gatsbyImageData} />
+            name="Novak Tatarevic"
+            desc=""
+            img={data.novak.childImageSharp.gatsbyImageData}/>
 
           {/*Right Column*/}
           <Member
             title="President"
             name="Zhoujie Yu"
-            desc="Zhoujie Yu is a third year Nanoengineering student at Warren college. She did a few years of wushu as a kid and is getting back into it with UCSD Wushu. When not idling away time in the library with fellow wushu library residents, she can often be found consuming art or enjoying food (probably bread). She also likes to try out different outdoor activities when not in hermit or studying mode."
+            desc="Zhoujie Y. is a senior in the Nanoengineering department. She has a huge sweet tooth despite not liking things that are too sweet and also has an eternal attraction to bread/pastries. Aside from wushu, she has too many hobbies for the amount of time that she is free. You can usually find her either in class, in the library, or wandering out and about for no particular reason. As a certified senior, she presides over the club and maintains its peace and prosperity."
             img={data.zhoujie.childImageSharp.gatsbyImageData} />
           <Member
             title="Coach"
             name="Alex Zhang"
-            desc="Alex Zhang is a third year ICAM major and CSE minor. He started wushu in Beijing, China as a kid (elementary school), but stopped practicing regularly in high school. He then started training for competitive wushu in college, later getting a spot on USA taolu B team. Outside of wushu, he plays a lot of video games - Mostly fps games and occasionally plays cs casually."
+            desc="Alex Zhang is a fourth year ICAM major and CSE minor. He started wushu in Beijing, China as a kid (elementary school), but stopped practicing regularly in high school. He then started training for competitive wushu in college. Outside of wushu, he plays a lot of video games - Mostly fps games and occasionally plays cs casually."
             img={data.alex.childImageSharp.gatsbyImageData} />
           <Member
             title="External"
             name="Vivian Yu"
-            desc="Vivian is a second-year Math-CS major in ERC. She is an international student from Hong Kong whose experience in wushu prior to joining UCSD Wushu is comprised entirely of watching Chinese historical fantasy wuxia dramas. She is currently learning straightsword."
+            desc="vivian is a 3rd year math-cs major who is allergic to capital letters and going to class. she is awake for approximately no hours a day and can often be seen napping at practice. her favorite classroom to sleep in is the back row of warren lecture hall because you can lean your head against the wall there. as externals she makes the graphics and videos seen on ucsd wushu’s social media accounts when her wrist isn’t in a cast."
             img={data.vivian.childImageSharp.gatsbyImageData} />
           <Member
-            title="Inventory Manager"
-            name="Yao Bi"
-            desc="Yao is a fourth year general biology major in sixth. She has been doing wushu since her 2nd year. Yao does not have free time. But in the fleeting moments of free time that do eventually present themselves, she indulges in exhilarating hobbies such as rewatching haikyuu for the nth time, being delusional about kpop, and succumbing to anxiety. Yao can usually be found in lab hoping something doesn't explode (0/4 this week)."
-            img={data.yao.childImageSharp.gatsbyImageData} />
-          <Member
-            title="Demo Coordinator"
-            name="James Young"
-            desc={`James is a third year Computer Science with Bioinformatics major in Revelle College. At a "young" age, he began practicing Taijiquan because his parents deemed it the "least martial" martial art. Now, he succumbs to paradoxes knowing not how he arrives at his endeavors nor for which reason he willfully perpetuates them. Symptoms of this affliction include enrolling in haphazard electives, volunteering uncompensated overtime, working in labs non-adjacent to his studies, and contriving unreliable narratives.`}
-            img={data.james.childImageSharp.gatsbyImageData} />
-          <Member
             title="Secretary"
-            name="Maya Chang"
-            desc="Maya is a second year math major at seventh college. After 8 years of wushu she has mastered the yells of the southern fist, and looks forward to new forms. Outside of the club, her passion for math means she will gladly help you with your homework, even if it means neglecting her own unfinished homework."
-            img={data.maya.childImageSharp.gatsbyImageData} />
+            name="Benson Zhu"
+            desc="Benson is a second year Math CS major with a minor in Data Science who enjoys all things silly. When he isn’t distracted and rotting at Geisel, he enjoys baking and playing video games. As the club secretary, he takes care of logistics behind the scenes, and occasionally buying items for club events. Behind his rbf and excessively loud metal music, he is always up for a conversation, so do say hi and maybe he will even have an extra baked treat for you!"
+            img={data.benson.childImageSharp.gatsbyImageData} />
           <Member
             title="Freeloader"
             name="Bobby Reilly"
